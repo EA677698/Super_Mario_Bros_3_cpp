@@ -33,3 +33,5 @@
 *.app
 sounds/
 assets/
+.gitignore
+.gitattributes
