@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Cards.cpp
+
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/GameTick.cpp
+
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Global.cpp
+
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Main.cpp
+iostream
+-
+GameTick.cpp
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/GameTick.cpp
+

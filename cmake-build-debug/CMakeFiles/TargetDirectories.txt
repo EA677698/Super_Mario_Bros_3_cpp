@@ -1,0 +1,3 @@
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir
+C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
