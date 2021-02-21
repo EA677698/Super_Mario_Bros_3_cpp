@@ -77,6 +77,7 @@ include CMakeFiles/Super_Mario_Bros_3_c++.dir/progress.make
 include CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
 
 CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
 CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj: ../src/Main/Main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Main.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Main.cpp
@@ -89,35 +90,444 @@ CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Main.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Main.cpp.s
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.obj: ../src/Main/GameTick.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\GameTick.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\GameTick.cpp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj: ../src/Elements/Entities/Enemies/Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\Enemy.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\Enemy.cpp
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\GameTick.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\GameTick.cpp.i
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\Enemy.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\Enemy.cpp.i
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\GameTick.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\GameTick.cpp.s
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\Enemy.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\Enemy.cpp.s
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.obj: ../src/Main/Cards.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Cards.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Cards.cpp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj: ../src/Elements/Entities/Enemies/Goomba.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\Goomba.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\Goomba.cpp
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Cards.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Cards.cpp.i
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\Goomba.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\Goomba.cpp.i
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Cards.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Cards.cpp.s
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\Goomba.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\Goomba.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj: ../src/Elements/Entities/Enemies/HammerBro.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\HammerBro.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\HammerBro.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\HammerBro.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\HammerBro.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\HammerBro.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\HammerBro.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj: ../src/Elements/Entities/Enemies/KoopaTroopa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\KoopaTroopa.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\KoopaTroopa.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\KoopaTroopa.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\KoopaTroopa.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Enemies\KoopaTroopa.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Enemies\KoopaTroopa.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj: ../src/Elements/Entities/Mario/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Mario\Player.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Mario\Player.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Mario\Player.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Mario\Player.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Mario\Player.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Mario\Player.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj: ../src/Elements/Entities/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Entity.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Entity.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Entity.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Entity.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\Entity.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\Entity.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj: ../src/Elements/Entities/NotLiving/Coin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\Coin.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\Coin.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\Coin.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\Coin.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\Coin.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\Coin.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj: ../src/Elements/Entities/NotLiving/Fireball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\Fireball.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\Fireball.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\Fireball.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\Fireball.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\Fireball.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\Fireball.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj: ../src/Elements/Entities/NotLiving/GreenMushroom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\GreenMushroom.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\GreenMushroom.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\GreenMushroom.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\GreenMushroom.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\GreenMushroom.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\GreenMushroom.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj: ../src/Elements/Entities/NotLiving/NonLiving.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\NonLiving.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\NonLiving.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\NonLiving.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\NonLiving.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\NonLiving.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\NonLiving.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj: ../src/Elements/Entities/NotLiving/RedMushroom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\RedMushroom.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\RedMushroom.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\RedMushroom.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\RedMushroom.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Entities\NotLiving\RedMushroom.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Entities\NotLiving\RedMushroom.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj: ../src/Elements/Tiles/Interactables/Bricks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Bricks.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Bricks.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Bricks.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Bricks.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Bricks.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Bricks.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj: ../src/Elements/Tiles/Interactables/Interactable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Interactable.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Interactable.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Interactable.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Interactable.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Interactable.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Interactable.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj: ../src/Elements/Tiles/Interactables/LuckyBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\LuckyBlock.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\LuckyBlock.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\LuckyBlock.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\LuckyBlock.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\LuckyBlock.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\LuckyBlock.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj: ../src/Elements/Tiles/Interactables/Pipes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Pipes.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Pipes.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Pipes.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Pipes.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Interactables\Pipes.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Interactables\Pipes.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj: ../src/Tools/Clip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Clip.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Clip.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Clip.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Clip.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Clip.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Clip.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj: ../src/Tools/Tool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Tool.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Tool.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Tool.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Tool.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Tool.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Tool.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj: ../src/Tools/Trigger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Trigger.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Trigger.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Trigger.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Trigger.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Trigger.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Trigger.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj: ../src/Elements/Tiles/BigBlocks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\BigBlocks.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\BigBlocks.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\BigBlocks.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\BigBlocks.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\BigBlocks.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\BigBlocks.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj: ../src/Elements/Tiles/Clouds.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Clouds.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Clouds.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Clouds.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Clouds.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Clouds.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Clouds.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj: ../src/Elements/Tiles/Floor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Floor.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Floor.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Floor.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Floor.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Floor.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Floor.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj: ../src/Elements/Tiles/Hill.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Hill.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Hill.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Hill.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Hill.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Hill.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Hill.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj: ../src/Elements/Tiles/Shrub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Shrub.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Shrub.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Shrub.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Shrub.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Shrub.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Shrub.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj: ../src/Elements/Tiles/Tile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Tile.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Tile.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Tile.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Tile.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\Tile.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\Tile.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj: ../src/Elements/Tiles/WoodenBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\WoodenBlock.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\WoodenBlock.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\WoodenBlock.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\WoodenBlock.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Tiles\WoodenBlock.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Tiles\WoodenBlock.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj: ../src/Elements/Elements.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Elements.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Elements.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Elements.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Elements.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Elements.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Elements.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj: ../src/Level/Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Level\Level.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Level\Level.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Level\Level.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Level\Level.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Level\Level.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Level\Level.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj: ../src/FileManager/Loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\FileManager\Loader.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\FileManager\Loader.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\FileManager\Loader.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\FileManager\Loader.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\FileManager\Loader.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\FileManager\Loader.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj: ../src/FileManager/Saver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\FileManager\Saver.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\FileManager\Saver.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\FileManager\Saver.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\FileManager\Saver.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\FileManager\Saver.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\FileManager\Saver.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj: ../src/Level/Background.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Level\Background.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Level\Background.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Level\Background.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Level\Background.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Level\Background.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Level\Background.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj: ../src/Settings/Settings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Settings\Settings.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Settings\Settings.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Settings\Settings.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Settings\Settings.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Settings\Settings.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Settings\Settings.cpp.s
 
 CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
 CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj: ../src/Main/Global.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Global.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Global.cpp
 
 CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.i: cmake_force
@@ -128,25 +538,175 @@ CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Main\Global.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Main\Global.cpp.s
 
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj: ../src/Tools/Dimension.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Dimension.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Dimension.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Dimension.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Dimension.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Dimension.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Dimension.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj: ../src/Tools/HitBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\HitBox.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\HitBox.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\HitBox.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\HitBox.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\HitBox.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\HitBox.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj: ../src/Tools/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Point.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Point.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Point.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Point.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\Point.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\Point.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj: ../src/Elements/Manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Manager.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Manager.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Manager.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Manager.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Manager.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Manager.cpp.s
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj: ../src/Tools/String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\String.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\String.cpp
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\String.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\String.cpp.i
+
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\String.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\String.cpp.s
+
 # Object files for target Super_Mario_Bros_3_c++
 Super_Mario_Bros_3_c_______OBJECTS = \
 "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj" \
-"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.obj" \
-"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.obj" \
-"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj"
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj" \
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj"
 
 # External object files for target Super_Mario_Bros_3_c++
 Super_Mario_Bros_3_c_______EXTERNAL_OBJECTS =
 
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj
-Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.obj
-Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/build.make
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-graphics-s-d.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-audio-s-d.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-window-s-d.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-system-s-d.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-main-d.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libfreetype.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libopenal32.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libvorbisfile.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libvorbisenc.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libvorbis.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libogg.a
+Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libFLAC.a
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/linklibs.rsp
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/objects1.rsp
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Super_Mario_Bros_3_c++.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable Super_Mario_Bros_3_c++.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Super_Mario_Bros_3_c++.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

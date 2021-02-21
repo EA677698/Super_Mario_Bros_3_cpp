@@ -142,59 +142,761 @@ Super_Mario_Bros_3_c++/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/build
 .PHONY : Super_Mario_Bros_3_c++/fast
 
-src/Main/Cards.obj: src/Main/Cards.cpp.obj
+src/Elements/Elements.obj: src/Elements/Elements.cpp.obj
 
-.PHONY : src/Main/Cards.obj
-
-# target to build an object file
-src/Main/Cards.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.obj
-.PHONY : src/Main/Cards.cpp.obj
-
-src/Main/Cards.i: src/Main/Cards.cpp.i
-
-.PHONY : src/Main/Cards.i
-
-# target to preprocess a source file
-src/Main/Cards.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.i
-.PHONY : src/Main/Cards.cpp.i
-
-src/Main/Cards.s: src/Main/Cards.cpp.s
-
-.PHONY : src/Main/Cards.s
-
-# target to generate assembly for a file
-src/Main/Cards.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Cards.cpp.s
-.PHONY : src/Main/Cards.cpp.s
-
-src/Main/GameTick.obj: src/Main/GameTick.cpp.obj
-
-.PHONY : src/Main/GameTick.obj
+.PHONY : src/Elements/Elements.obj
 
 # target to build an object file
-src/Main/GameTick.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.obj
-.PHONY : src/Main/GameTick.cpp.obj
+src/Elements/Elements.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.obj
+.PHONY : src/Elements/Elements.cpp.obj
 
-src/Main/GameTick.i: src/Main/GameTick.cpp.i
+src/Elements/Elements.i: src/Elements/Elements.cpp.i
 
-.PHONY : src/Main/GameTick.i
+.PHONY : src/Elements/Elements.i
 
 # target to preprocess a source file
-src/Main/GameTick.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.i
-.PHONY : src/Main/GameTick.cpp.i
+src/Elements/Elements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.i
+.PHONY : src/Elements/Elements.cpp.i
 
-src/Main/GameTick.s: src/Main/GameTick.cpp.s
+src/Elements/Elements.s: src/Elements/Elements.cpp.s
 
-.PHONY : src/Main/GameTick.s
+.PHONY : src/Elements/Elements.s
 
 # target to generate assembly for a file
-src/Main/GameTick.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/GameTick.cpp.s
-.PHONY : src/Main/GameTick.cpp.s
+src/Elements/Elements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Elements.cpp.s
+.PHONY : src/Elements/Elements.cpp.s
+
+src/Elements/Entities/Enemies/Enemy.obj: src/Elements/Entities/Enemies/Enemy.cpp.obj
+
+.PHONY : src/Elements/Entities/Enemies/Enemy.obj
+
+# target to build an object file
+src/Elements/Entities/Enemies/Enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.obj
+.PHONY : src/Elements/Entities/Enemies/Enemy.cpp.obj
+
+src/Elements/Entities/Enemies/Enemy.i: src/Elements/Entities/Enemies/Enemy.cpp.i
+
+.PHONY : src/Elements/Entities/Enemies/Enemy.i
+
+# target to preprocess a source file
+src/Elements/Entities/Enemies/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.i
+.PHONY : src/Elements/Entities/Enemies/Enemy.cpp.i
+
+src/Elements/Entities/Enemies/Enemy.s: src/Elements/Entities/Enemies/Enemy.cpp.s
+
+.PHONY : src/Elements/Entities/Enemies/Enemy.s
+
+# target to generate assembly for a file
+src/Elements/Entities/Enemies/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Enemy.cpp.s
+.PHONY : src/Elements/Entities/Enemies/Enemy.cpp.s
+
+src/Elements/Entities/Enemies/Goomba.obj: src/Elements/Entities/Enemies/Goomba.cpp.obj
+
+.PHONY : src/Elements/Entities/Enemies/Goomba.obj
+
+# target to build an object file
+src/Elements/Entities/Enemies/Goomba.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.obj
+.PHONY : src/Elements/Entities/Enemies/Goomba.cpp.obj
+
+src/Elements/Entities/Enemies/Goomba.i: src/Elements/Entities/Enemies/Goomba.cpp.i
+
+.PHONY : src/Elements/Entities/Enemies/Goomba.i
+
+# target to preprocess a source file
+src/Elements/Entities/Enemies/Goomba.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.i
+.PHONY : src/Elements/Entities/Enemies/Goomba.cpp.i
+
+src/Elements/Entities/Enemies/Goomba.s: src/Elements/Entities/Enemies/Goomba.cpp.s
+
+.PHONY : src/Elements/Entities/Enemies/Goomba.s
+
+# target to generate assembly for a file
+src/Elements/Entities/Enemies/Goomba.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/Goomba.cpp.s
+.PHONY : src/Elements/Entities/Enemies/Goomba.cpp.s
+
+src/Elements/Entities/Enemies/HammerBro.obj: src/Elements/Entities/Enemies/HammerBro.cpp.obj
+
+.PHONY : src/Elements/Entities/Enemies/HammerBro.obj
+
+# target to build an object file
+src/Elements/Entities/Enemies/HammerBro.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.obj
+.PHONY : src/Elements/Entities/Enemies/HammerBro.cpp.obj
+
+src/Elements/Entities/Enemies/HammerBro.i: src/Elements/Entities/Enemies/HammerBro.cpp.i
+
+.PHONY : src/Elements/Entities/Enemies/HammerBro.i
+
+# target to preprocess a source file
+src/Elements/Entities/Enemies/HammerBro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.i
+.PHONY : src/Elements/Entities/Enemies/HammerBro.cpp.i
+
+src/Elements/Entities/Enemies/HammerBro.s: src/Elements/Entities/Enemies/HammerBro.cpp.s
+
+.PHONY : src/Elements/Entities/Enemies/HammerBro.s
+
+# target to generate assembly for a file
+src/Elements/Entities/Enemies/HammerBro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/HammerBro.cpp.s
+.PHONY : src/Elements/Entities/Enemies/HammerBro.cpp.s
+
+src/Elements/Entities/Enemies/KoopaTroopa.obj: src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj
+
+.PHONY : src/Elements/Entities/Enemies/KoopaTroopa.obj
+
+# target to build an object file
+src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj
+.PHONY : src/Elements/Entities/Enemies/KoopaTroopa.cpp.obj
+
+src/Elements/Entities/Enemies/KoopaTroopa.i: src/Elements/Entities/Enemies/KoopaTroopa.cpp.i
+
+.PHONY : src/Elements/Entities/Enemies/KoopaTroopa.i
+
+# target to preprocess a source file
+src/Elements/Entities/Enemies/KoopaTroopa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.i
+.PHONY : src/Elements/Entities/Enemies/KoopaTroopa.cpp.i
+
+src/Elements/Entities/Enemies/KoopaTroopa.s: src/Elements/Entities/Enemies/KoopaTroopa.cpp.s
+
+.PHONY : src/Elements/Entities/Enemies/KoopaTroopa.s
+
+# target to generate assembly for a file
+src/Elements/Entities/Enemies/KoopaTroopa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Enemies/KoopaTroopa.cpp.s
+.PHONY : src/Elements/Entities/Enemies/KoopaTroopa.cpp.s
+
+src/Elements/Entities/Entity.obj: src/Elements/Entities/Entity.cpp.obj
+
+.PHONY : src/Elements/Entities/Entity.obj
+
+# target to build an object file
+src/Elements/Entities/Entity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.obj
+.PHONY : src/Elements/Entities/Entity.cpp.obj
+
+src/Elements/Entities/Entity.i: src/Elements/Entities/Entity.cpp.i
+
+.PHONY : src/Elements/Entities/Entity.i
+
+# target to preprocess a source file
+src/Elements/Entities/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.i
+.PHONY : src/Elements/Entities/Entity.cpp.i
+
+src/Elements/Entities/Entity.s: src/Elements/Entities/Entity.cpp.s
+
+.PHONY : src/Elements/Entities/Entity.s
+
+# target to generate assembly for a file
+src/Elements/Entities/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Entity.cpp.s
+.PHONY : src/Elements/Entities/Entity.cpp.s
+
+src/Elements/Entities/Mario/Player.obj: src/Elements/Entities/Mario/Player.cpp.obj
+
+.PHONY : src/Elements/Entities/Mario/Player.obj
+
+# target to build an object file
+src/Elements/Entities/Mario/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.obj
+.PHONY : src/Elements/Entities/Mario/Player.cpp.obj
+
+src/Elements/Entities/Mario/Player.i: src/Elements/Entities/Mario/Player.cpp.i
+
+.PHONY : src/Elements/Entities/Mario/Player.i
+
+# target to preprocess a source file
+src/Elements/Entities/Mario/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.i
+.PHONY : src/Elements/Entities/Mario/Player.cpp.i
+
+src/Elements/Entities/Mario/Player.s: src/Elements/Entities/Mario/Player.cpp.s
+
+.PHONY : src/Elements/Entities/Mario/Player.s
+
+# target to generate assembly for a file
+src/Elements/Entities/Mario/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/Mario/Player.cpp.s
+.PHONY : src/Elements/Entities/Mario/Player.cpp.s
+
+src/Elements/Entities/NotLiving/Coin.obj: src/Elements/Entities/NotLiving/Coin.cpp.obj
+
+.PHONY : src/Elements/Entities/NotLiving/Coin.obj
+
+# target to build an object file
+src/Elements/Entities/NotLiving/Coin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.obj
+.PHONY : src/Elements/Entities/NotLiving/Coin.cpp.obj
+
+src/Elements/Entities/NotLiving/Coin.i: src/Elements/Entities/NotLiving/Coin.cpp.i
+
+.PHONY : src/Elements/Entities/NotLiving/Coin.i
+
+# target to preprocess a source file
+src/Elements/Entities/NotLiving/Coin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.i
+.PHONY : src/Elements/Entities/NotLiving/Coin.cpp.i
+
+src/Elements/Entities/NotLiving/Coin.s: src/Elements/Entities/NotLiving/Coin.cpp.s
+
+.PHONY : src/Elements/Entities/NotLiving/Coin.s
+
+# target to generate assembly for a file
+src/Elements/Entities/NotLiving/Coin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Coin.cpp.s
+.PHONY : src/Elements/Entities/NotLiving/Coin.cpp.s
+
+src/Elements/Entities/NotLiving/Fireball.obj: src/Elements/Entities/NotLiving/Fireball.cpp.obj
+
+.PHONY : src/Elements/Entities/NotLiving/Fireball.obj
+
+# target to build an object file
+src/Elements/Entities/NotLiving/Fireball.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.obj
+.PHONY : src/Elements/Entities/NotLiving/Fireball.cpp.obj
+
+src/Elements/Entities/NotLiving/Fireball.i: src/Elements/Entities/NotLiving/Fireball.cpp.i
+
+.PHONY : src/Elements/Entities/NotLiving/Fireball.i
+
+# target to preprocess a source file
+src/Elements/Entities/NotLiving/Fireball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.i
+.PHONY : src/Elements/Entities/NotLiving/Fireball.cpp.i
+
+src/Elements/Entities/NotLiving/Fireball.s: src/Elements/Entities/NotLiving/Fireball.cpp.s
+
+.PHONY : src/Elements/Entities/NotLiving/Fireball.s
+
+# target to generate assembly for a file
+src/Elements/Entities/NotLiving/Fireball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/Fireball.cpp.s
+.PHONY : src/Elements/Entities/NotLiving/Fireball.cpp.s
+
+src/Elements/Entities/NotLiving/GreenMushroom.obj: src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj
+
+.PHONY : src/Elements/Entities/NotLiving/GreenMushroom.obj
+
+# target to build an object file
+src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj
+.PHONY : src/Elements/Entities/NotLiving/GreenMushroom.cpp.obj
+
+src/Elements/Entities/NotLiving/GreenMushroom.i: src/Elements/Entities/NotLiving/GreenMushroom.cpp.i
+
+.PHONY : src/Elements/Entities/NotLiving/GreenMushroom.i
+
+# target to preprocess a source file
+src/Elements/Entities/NotLiving/GreenMushroom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.i
+.PHONY : src/Elements/Entities/NotLiving/GreenMushroom.cpp.i
+
+src/Elements/Entities/NotLiving/GreenMushroom.s: src/Elements/Entities/NotLiving/GreenMushroom.cpp.s
+
+.PHONY : src/Elements/Entities/NotLiving/GreenMushroom.s
+
+# target to generate assembly for a file
+src/Elements/Entities/NotLiving/GreenMushroom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/GreenMushroom.cpp.s
+.PHONY : src/Elements/Entities/NotLiving/GreenMushroom.cpp.s
+
+src/Elements/Entities/NotLiving/NonLiving.obj: src/Elements/Entities/NotLiving/NonLiving.cpp.obj
+
+.PHONY : src/Elements/Entities/NotLiving/NonLiving.obj
+
+# target to build an object file
+src/Elements/Entities/NotLiving/NonLiving.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.obj
+.PHONY : src/Elements/Entities/NotLiving/NonLiving.cpp.obj
+
+src/Elements/Entities/NotLiving/NonLiving.i: src/Elements/Entities/NotLiving/NonLiving.cpp.i
+
+.PHONY : src/Elements/Entities/NotLiving/NonLiving.i
+
+# target to preprocess a source file
+src/Elements/Entities/NotLiving/NonLiving.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.i
+.PHONY : src/Elements/Entities/NotLiving/NonLiving.cpp.i
+
+src/Elements/Entities/NotLiving/NonLiving.s: src/Elements/Entities/NotLiving/NonLiving.cpp.s
+
+.PHONY : src/Elements/Entities/NotLiving/NonLiving.s
+
+# target to generate assembly for a file
+src/Elements/Entities/NotLiving/NonLiving.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/NonLiving.cpp.s
+.PHONY : src/Elements/Entities/NotLiving/NonLiving.cpp.s
+
+src/Elements/Entities/NotLiving/RedMushroom.obj: src/Elements/Entities/NotLiving/RedMushroom.cpp.obj
+
+.PHONY : src/Elements/Entities/NotLiving/RedMushroom.obj
+
+# target to build an object file
+src/Elements/Entities/NotLiving/RedMushroom.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.obj
+.PHONY : src/Elements/Entities/NotLiving/RedMushroom.cpp.obj
+
+src/Elements/Entities/NotLiving/RedMushroom.i: src/Elements/Entities/NotLiving/RedMushroom.cpp.i
+
+.PHONY : src/Elements/Entities/NotLiving/RedMushroom.i
+
+# target to preprocess a source file
+src/Elements/Entities/NotLiving/RedMushroom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.i
+.PHONY : src/Elements/Entities/NotLiving/RedMushroom.cpp.i
+
+src/Elements/Entities/NotLiving/RedMushroom.s: src/Elements/Entities/NotLiving/RedMushroom.cpp.s
+
+.PHONY : src/Elements/Entities/NotLiving/RedMushroom.s
+
+# target to generate assembly for a file
+src/Elements/Entities/NotLiving/RedMushroom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Entities/NotLiving/RedMushroom.cpp.s
+.PHONY : src/Elements/Entities/NotLiving/RedMushroom.cpp.s
+
+src/Elements/Manager.obj: src/Elements/Manager.cpp.obj
+
+.PHONY : src/Elements/Manager.obj
+
+# target to build an object file
+src/Elements/Manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj
+.PHONY : src/Elements/Manager.cpp.obj
+
+src/Elements/Manager.i: src/Elements/Manager.cpp.i
+
+.PHONY : src/Elements/Manager.i
+
+# target to preprocess a source file
+src/Elements/Manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.i
+.PHONY : src/Elements/Manager.cpp.i
+
+src/Elements/Manager.s: src/Elements/Manager.cpp.s
+
+.PHONY : src/Elements/Manager.s
+
+# target to generate assembly for a file
+src/Elements/Manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.s
+.PHONY : src/Elements/Manager.cpp.s
+
+src/Elements/Tiles/BigBlocks.obj: src/Elements/Tiles/BigBlocks.cpp.obj
+
+.PHONY : src/Elements/Tiles/BigBlocks.obj
+
+# target to build an object file
+src/Elements/Tiles/BigBlocks.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.obj
+.PHONY : src/Elements/Tiles/BigBlocks.cpp.obj
+
+src/Elements/Tiles/BigBlocks.i: src/Elements/Tiles/BigBlocks.cpp.i
+
+.PHONY : src/Elements/Tiles/BigBlocks.i
+
+# target to preprocess a source file
+src/Elements/Tiles/BigBlocks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.i
+.PHONY : src/Elements/Tiles/BigBlocks.cpp.i
+
+src/Elements/Tiles/BigBlocks.s: src/Elements/Tiles/BigBlocks.cpp.s
+
+.PHONY : src/Elements/Tiles/BigBlocks.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/BigBlocks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/BigBlocks.cpp.s
+.PHONY : src/Elements/Tiles/BigBlocks.cpp.s
+
+src/Elements/Tiles/Clouds.obj: src/Elements/Tiles/Clouds.cpp.obj
+
+.PHONY : src/Elements/Tiles/Clouds.obj
+
+# target to build an object file
+src/Elements/Tiles/Clouds.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.obj
+.PHONY : src/Elements/Tiles/Clouds.cpp.obj
+
+src/Elements/Tiles/Clouds.i: src/Elements/Tiles/Clouds.cpp.i
+
+.PHONY : src/Elements/Tiles/Clouds.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Clouds.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.i
+.PHONY : src/Elements/Tiles/Clouds.cpp.i
+
+src/Elements/Tiles/Clouds.s: src/Elements/Tiles/Clouds.cpp.s
+
+.PHONY : src/Elements/Tiles/Clouds.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Clouds.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Clouds.cpp.s
+.PHONY : src/Elements/Tiles/Clouds.cpp.s
+
+src/Elements/Tiles/Floor.obj: src/Elements/Tiles/Floor.cpp.obj
+
+.PHONY : src/Elements/Tiles/Floor.obj
+
+# target to build an object file
+src/Elements/Tiles/Floor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.obj
+.PHONY : src/Elements/Tiles/Floor.cpp.obj
+
+src/Elements/Tiles/Floor.i: src/Elements/Tiles/Floor.cpp.i
+
+.PHONY : src/Elements/Tiles/Floor.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Floor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.i
+.PHONY : src/Elements/Tiles/Floor.cpp.i
+
+src/Elements/Tiles/Floor.s: src/Elements/Tiles/Floor.cpp.s
+
+.PHONY : src/Elements/Tiles/Floor.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Floor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Floor.cpp.s
+.PHONY : src/Elements/Tiles/Floor.cpp.s
+
+src/Elements/Tiles/Hill.obj: src/Elements/Tiles/Hill.cpp.obj
+
+.PHONY : src/Elements/Tiles/Hill.obj
+
+# target to build an object file
+src/Elements/Tiles/Hill.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.obj
+.PHONY : src/Elements/Tiles/Hill.cpp.obj
+
+src/Elements/Tiles/Hill.i: src/Elements/Tiles/Hill.cpp.i
+
+.PHONY : src/Elements/Tiles/Hill.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Hill.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.i
+.PHONY : src/Elements/Tiles/Hill.cpp.i
+
+src/Elements/Tiles/Hill.s: src/Elements/Tiles/Hill.cpp.s
+
+.PHONY : src/Elements/Tiles/Hill.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Hill.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Hill.cpp.s
+.PHONY : src/Elements/Tiles/Hill.cpp.s
+
+src/Elements/Tiles/Interactables/Bricks.obj: src/Elements/Tiles/Interactables/Bricks.cpp.obj
+
+.PHONY : src/Elements/Tiles/Interactables/Bricks.obj
+
+# target to build an object file
+src/Elements/Tiles/Interactables/Bricks.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.obj
+.PHONY : src/Elements/Tiles/Interactables/Bricks.cpp.obj
+
+src/Elements/Tiles/Interactables/Bricks.i: src/Elements/Tiles/Interactables/Bricks.cpp.i
+
+.PHONY : src/Elements/Tiles/Interactables/Bricks.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Interactables/Bricks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.i
+.PHONY : src/Elements/Tiles/Interactables/Bricks.cpp.i
+
+src/Elements/Tiles/Interactables/Bricks.s: src/Elements/Tiles/Interactables/Bricks.cpp.s
+
+.PHONY : src/Elements/Tiles/Interactables/Bricks.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Interactables/Bricks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Bricks.cpp.s
+.PHONY : src/Elements/Tiles/Interactables/Bricks.cpp.s
+
+src/Elements/Tiles/Interactables/Interactable.obj: src/Elements/Tiles/Interactables/Interactable.cpp.obj
+
+.PHONY : src/Elements/Tiles/Interactables/Interactable.obj
+
+# target to build an object file
+src/Elements/Tiles/Interactables/Interactable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.obj
+.PHONY : src/Elements/Tiles/Interactables/Interactable.cpp.obj
+
+src/Elements/Tiles/Interactables/Interactable.i: src/Elements/Tiles/Interactables/Interactable.cpp.i
+
+.PHONY : src/Elements/Tiles/Interactables/Interactable.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Interactables/Interactable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.i
+.PHONY : src/Elements/Tiles/Interactables/Interactable.cpp.i
+
+src/Elements/Tiles/Interactables/Interactable.s: src/Elements/Tiles/Interactables/Interactable.cpp.s
+
+.PHONY : src/Elements/Tiles/Interactables/Interactable.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Interactables/Interactable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Interactable.cpp.s
+.PHONY : src/Elements/Tiles/Interactables/Interactable.cpp.s
+
+src/Elements/Tiles/Interactables/LuckyBlock.obj: src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj
+
+.PHONY : src/Elements/Tiles/Interactables/LuckyBlock.obj
+
+# target to build an object file
+src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj
+.PHONY : src/Elements/Tiles/Interactables/LuckyBlock.cpp.obj
+
+src/Elements/Tiles/Interactables/LuckyBlock.i: src/Elements/Tiles/Interactables/LuckyBlock.cpp.i
+
+.PHONY : src/Elements/Tiles/Interactables/LuckyBlock.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Interactables/LuckyBlock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.i
+.PHONY : src/Elements/Tiles/Interactables/LuckyBlock.cpp.i
+
+src/Elements/Tiles/Interactables/LuckyBlock.s: src/Elements/Tiles/Interactables/LuckyBlock.cpp.s
+
+.PHONY : src/Elements/Tiles/Interactables/LuckyBlock.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Interactables/LuckyBlock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/LuckyBlock.cpp.s
+.PHONY : src/Elements/Tiles/Interactables/LuckyBlock.cpp.s
+
+src/Elements/Tiles/Interactables/Pipes.obj: src/Elements/Tiles/Interactables/Pipes.cpp.obj
+
+.PHONY : src/Elements/Tiles/Interactables/Pipes.obj
+
+# target to build an object file
+src/Elements/Tiles/Interactables/Pipes.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.obj
+.PHONY : src/Elements/Tiles/Interactables/Pipes.cpp.obj
+
+src/Elements/Tiles/Interactables/Pipes.i: src/Elements/Tiles/Interactables/Pipes.cpp.i
+
+.PHONY : src/Elements/Tiles/Interactables/Pipes.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Interactables/Pipes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.i
+.PHONY : src/Elements/Tiles/Interactables/Pipes.cpp.i
+
+src/Elements/Tiles/Interactables/Pipes.s: src/Elements/Tiles/Interactables/Pipes.cpp.s
+
+.PHONY : src/Elements/Tiles/Interactables/Pipes.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Interactables/Pipes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Interactables/Pipes.cpp.s
+.PHONY : src/Elements/Tiles/Interactables/Pipes.cpp.s
+
+src/Elements/Tiles/Shrub.obj: src/Elements/Tiles/Shrub.cpp.obj
+
+.PHONY : src/Elements/Tiles/Shrub.obj
+
+# target to build an object file
+src/Elements/Tiles/Shrub.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.obj
+.PHONY : src/Elements/Tiles/Shrub.cpp.obj
+
+src/Elements/Tiles/Shrub.i: src/Elements/Tiles/Shrub.cpp.i
+
+.PHONY : src/Elements/Tiles/Shrub.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Shrub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.i
+.PHONY : src/Elements/Tiles/Shrub.cpp.i
+
+src/Elements/Tiles/Shrub.s: src/Elements/Tiles/Shrub.cpp.s
+
+.PHONY : src/Elements/Tiles/Shrub.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Shrub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Shrub.cpp.s
+.PHONY : src/Elements/Tiles/Shrub.cpp.s
+
+src/Elements/Tiles/Tile.obj: src/Elements/Tiles/Tile.cpp.obj
+
+.PHONY : src/Elements/Tiles/Tile.obj
+
+# target to build an object file
+src/Elements/Tiles/Tile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.obj
+.PHONY : src/Elements/Tiles/Tile.cpp.obj
+
+src/Elements/Tiles/Tile.i: src/Elements/Tiles/Tile.cpp.i
+
+.PHONY : src/Elements/Tiles/Tile.i
+
+# target to preprocess a source file
+src/Elements/Tiles/Tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.i
+.PHONY : src/Elements/Tiles/Tile.cpp.i
+
+src/Elements/Tiles/Tile.s: src/Elements/Tiles/Tile.cpp.s
+
+.PHONY : src/Elements/Tiles/Tile.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/Tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/Tile.cpp.s
+.PHONY : src/Elements/Tiles/Tile.cpp.s
+
+src/Elements/Tiles/WoodenBlock.obj: src/Elements/Tiles/WoodenBlock.cpp.obj
+
+.PHONY : src/Elements/Tiles/WoodenBlock.obj
+
+# target to build an object file
+src/Elements/Tiles/WoodenBlock.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj
+.PHONY : src/Elements/Tiles/WoodenBlock.cpp.obj
+
+src/Elements/Tiles/WoodenBlock.i: src/Elements/Tiles/WoodenBlock.cpp.i
+
+.PHONY : src/Elements/Tiles/WoodenBlock.i
+
+# target to preprocess a source file
+src/Elements/Tiles/WoodenBlock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.i
+.PHONY : src/Elements/Tiles/WoodenBlock.cpp.i
+
+src/Elements/Tiles/WoodenBlock.s: src/Elements/Tiles/WoodenBlock.cpp.s
+
+.PHONY : src/Elements/Tiles/WoodenBlock.s
+
+# target to generate assembly for a file
+src/Elements/Tiles/WoodenBlock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.s
+.PHONY : src/Elements/Tiles/WoodenBlock.cpp.s
+
+src/FileManager/Loader.obj: src/FileManager/Loader.cpp.obj
+
+.PHONY : src/FileManager/Loader.obj
+
+# target to build an object file
+src/FileManager/Loader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj
+.PHONY : src/FileManager/Loader.cpp.obj
+
+src/FileManager/Loader.i: src/FileManager/Loader.cpp.i
+
+.PHONY : src/FileManager/Loader.i
+
+# target to preprocess a source file
+src/FileManager/Loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.i
+.PHONY : src/FileManager/Loader.cpp.i
+
+src/FileManager/Loader.s: src/FileManager/Loader.cpp.s
+
+.PHONY : src/FileManager/Loader.s
+
+# target to generate assembly for a file
+src/FileManager/Loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.s
+.PHONY : src/FileManager/Loader.cpp.s
+
+src/FileManager/Saver.obj: src/FileManager/Saver.cpp.obj
+
+.PHONY : src/FileManager/Saver.obj
+
+# target to build an object file
+src/FileManager/Saver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj
+.PHONY : src/FileManager/Saver.cpp.obj
+
+src/FileManager/Saver.i: src/FileManager/Saver.cpp.i
+
+.PHONY : src/FileManager/Saver.i
+
+# target to preprocess a source file
+src/FileManager/Saver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.i
+.PHONY : src/FileManager/Saver.cpp.i
+
+src/FileManager/Saver.s: src/FileManager/Saver.cpp.s
+
+.PHONY : src/FileManager/Saver.s
+
+# target to generate assembly for a file
+src/FileManager/Saver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.s
+.PHONY : src/FileManager/Saver.cpp.s
+
+src/Level/Background.obj: src/Level/Background.cpp.obj
+
+.PHONY : src/Level/Background.obj
+
+# target to build an object file
+src/Level/Background.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj
+.PHONY : src/Level/Background.cpp.obj
+
+src/Level/Background.i: src/Level/Background.cpp.i
+
+.PHONY : src/Level/Background.i
+
+# target to preprocess a source file
+src/Level/Background.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.i
+.PHONY : src/Level/Background.cpp.i
+
+src/Level/Background.s: src/Level/Background.cpp.s
+
+.PHONY : src/Level/Background.s
+
+# target to generate assembly for a file
+src/Level/Background.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.s
+.PHONY : src/Level/Background.cpp.s
+
+src/Level/Level.obj: src/Level/Level.cpp.obj
+
+.PHONY : src/Level/Level.obj
+
+# target to build an object file
+src/Level/Level.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj
+.PHONY : src/Level/Level.cpp.obj
+
+src/Level/Level.i: src/Level/Level.cpp.i
+
+.PHONY : src/Level/Level.i
+
+# target to preprocess a source file
+src/Level/Level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.i
+.PHONY : src/Level/Level.cpp.i
+
+src/Level/Level.s: src/Level/Level.cpp.s
+
+.PHONY : src/Level/Level.s
+
+# target to generate assembly for a file
+src/Level/Level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.s
+.PHONY : src/Level/Level.cpp.s
 
 src/Main/Global.obj: src/Main/Global.cpp.obj
 
@@ -250,6 +952,222 @@ src/Main/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.s
 .PHONY : src/Main/Main.cpp.s
 
+src/Settings/Settings.obj: src/Settings/Settings.cpp.obj
+
+.PHONY : src/Settings/Settings.obj
+
+# target to build an object file
+src/Settings/Settings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj
+.PHONY : src/Settings/Settings.cpp.obj
+
+src/Settings/Settings.i: src/Settings/Settings.cpp.i
+
+.PHONY : src/Settings/Settings.i
+
+# target to preprocess a source file
+src/Settings/Settings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.i
+.PHONY : src/Settings/Settings.cpp.i
+
+src/Settings/Settings.s: src/Settings/Settings.cpp.s
+
+.PHONY : src/Settings/Settings.s
+
+# target to generate assembly for a file
+src/Settings/Settings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.s
+.PHONY : src/Settings/Settings.cpp.s
+
+src/Tools/Clip.obj: src/Tools/Clip.cpp.obj
+
+.PHONY : src/Tools/Clip.obj
+
+# target to build an object file
+src/Tools/Clip.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj
+.PHONY : src/Tools/Clip.cpp.obj
+
+src/Tools/Clip.i: src/Tools/Clip.cpp.i
+
+.PHONY : src/Tools/Clip.i
+
+# target to preprocess a source file
+src/Tools/Clip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.i
+.PHONY : src/Tools/Clip.cpp.i
+
+src/Tools/Clip.s: src/Tools/Clip.cpp.s
+
+.PHONY : src/Tools/Clip.s
+
+# target to generate assembly for a file
+src/Tools/Clip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.s
+.PHONY : src/Tools/Clip.cpp.s
+
+src/Tools/Dimension.obj: src/Tools/Dimension.cpp.obj
+
+.PHONY : src/Tools/Dimension.obj
+
+# target to build an object file
+src/Tools/Dimension.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj
+.PHONY : src/Tools/Dimension.cpp.obj
+
+src/Tools/Dimension.i: src/Tools/Dimension.cpp.i
+
+.PHONY : src/Tools/Dimension.i
+
+# target to preprocess a source file
+src/Tools/Dimension.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.i
+.PHONY : src/Tools/Dimension.cpp.i
+
+src/Tools/Dimension.s: src/Tools/Dimension.cpp.s
+
+.PHONY : src/Tools/Dimension.s
+
+# target to generate assembly for a file
+src/Tools/Dimension.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.s
+.PHONY : src/Tools/Dimension.cpp.s
+
+src/Tools/HitBox.obj: src/Tools/HitBox.cpp.obj
+
+.PHONY : src/Tools/HitBox.obj
+
+# target to build an object file
+src/Tools/HitBox.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj
+.PHONY : src/Tools/HitBox.cpp.obj
+
+src/Tools/HitBox.i: src/Tools/HitBox.cpp.i
+
+.PHONY : src/Tools/HitBox.i
+
+# target to preprocess a source file
+src/Tools/HitBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.i
+.PHONY : src/Tools/HitBox.cpp.i
+
+src/Tools/HitBox.s: src/Tools/HitBox.cpp.s
+
+.PHONY : src/Tools/HitBox.s
+
+# target to generate assembly for a file
+src/Tools/HitBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.s
+.PHONY : src/Tools/HitBox.cpp.s
+
+src/Tools/Point.obj: src/Tools/Point.cpp.obj
+
+.PHONY : src/Tools/Point.obj
+
+# target to build an object file
+src/Tools/Point.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj
+.PHONY : src/Tools/Point.cpp.obj
+
+src/Tools/Point.i: src/Tools/Point.cpp.i
+
+.PHONY : src/Tools/Point.i
+
+# target to preprocess a source file
+src/Tools/Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.i
+.PHONY : src/Tools/Point.cpp.i
+
+src/Tools/Point.s: src/Tools/Point.cpp.s
+
+.PHONY : src/Tools/Point.s
+
+# target to generate assembly for a file
+src/Tools/Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.s
+.PHONY : src/Tools/Point.cpp.s
+
+src/Tools/String.obj: src/Tools/String.cpp.obj
+
+.PHONY : src/Tools/String.obj
+
+# target to build an object file
+src/Tools/String.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj
+.PHONY : src/Tools/String.cpp.obj
+
+src/Tools/String.i: src/Tools/String.cpp.i
+
+.PHONY : src/Tools/String.i
+
+# target to preprocess a source file
+src/Tools/String.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.i
+.PHONY : src/Tools/String.cpp.i
+
+src/Tools/String.s: src/Tools/String.cpp.s
+
+.PHONY : src/Tools/String.s
+
+# target to generate assembly for a file
+src/Tools/String.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.s
+.PHONY : src/Tools/String.cpp.s
+
+src/Tools/Tool.obj: src/Tools/Tool.cpp.obj
+
+.PHONY : src/Tools/Tool.obj
+
+# target to build an object file
+src/Tools/Tool.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj
+.PHONY : src/Tools/Tool.cpp.obj
+
+src/Tools/Tool.i: src/Tools/Tool.cpp.i
+
+.PHONY : src/Tools/Tool.i
+
+# target to preprocess a source file
+src/Tools/Tool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.i
+.PHONY : src/Tools/Tool.cpp.i
+
+src/Tools/Tool.s: src/Tools/Tool.cpp.s
+
+.PHONY : src/Tools/Tool.s
+
+# target to generate assembly for a file
+src/Tools/Tool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.s
+.PHONY : src/Tools/Tool.cpp.s
+
+src/Tools/Trigger.obj: src/Tools/Trigger.cpp.obj
+
+.PHONY : src/Tools/Trigger.obj
+
+# target to build an object file
+src/Tools/Trigger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj
+.PHONY : src/Tools/Trigger.cpp.obj
+
+src/Tools/Trigger.i: src/Tools/Trigger.cpp.i
+
+.PHONY : src/Tools/Trigger.i
+
+# target to preprocess a source file
+src/Tools/Trigger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.i
+.PHONY : src/Tools/Trigger.cpp.i
+
+src/Tools/Trigger.s: src/Tools/Trigger.cpp.s
+
+.PHONY : src/Tools/Trigger.s
+
+# target to generate assembly for a file
+src/Tools/Trigger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.s
+.PHONY : src/Tools/Trigger.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -259,18 +1177,120 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Super_Mario_Bros_3_c++
-	@echo ... src/Main/Cards.obj
-	@echo ... src/Main/Cards.i
-	@echo ... src/Main/Cards.s
-	@echo ... src/Main/GameTick.obj
-	@echo ... src/Main/GameTick.i
-	@echo ... src/Main/GameTick.s
+	@echo ... src/Elements/Elements.obj
+	@echo ... src/Elements/Elements.i
+	@echo ... src/Elements/Elements.s
+	@echo ... src/Elements/Entities/Enemies/Enemy.obj
+	@echo ... src/Elements/Entities/Enemies/Enemy.i
+	@echo ... src/Elements/Entities/Enemies/Enemy.s
+	@echo ... src/Elements/Entities/Enemies/Goomba.obj
+	@echo ... src/Elements/Entities/Enemies/Goomba.i
+	@echo ... src/Elements/Entities/Enemies/Goomba.s
+	@echo ... src/Elements/Entities/Enemies/HammerBro.obj
+	@echo ... src/Elements/Entities/Enemies/HammerBro.i
+	@echo ... src/Elements/Entities/Enemies/HammerBro.s
+	@echo ... src/Elements/Entities/Enemies/KoopaTroopa.obj
+	@echo ... src/Elements/Entities/Enemies/KoopaTroopa.i
+	@echo ... src/Elements/Entities/Enemies/KoopaTroopa.s
+	@echo ... src/Elements/Entities/Entity.obj
+	@echo ... src/Elements/Entities/Entity.i
+	@echo ... src/Elements/Entities/Entity.s
+	@echo ... src/Elements/Entities/Mario/Player.obj
+	@echo ... src/Elements/Entities/Mario/Player.i
+	@echo ... src/Elements/Entities/Mario/Player.s
+	@echo ... src/Elements/Entities/NotLiving/Coin.obj
+	@echo ... src/Elements/Entities/NotLiving/Coin.i
+	@echo ... src/Elements/Entities/NotLiving/Coin.s
+	@echo ... src/Elements/Entities/NotLiving/Fireball.obj
+	@echo ... src/Elements/Entities/NotLiving/Fireball.i
+	@echo ... src/Elements/Entities/NotLiving/Fireball.s
+	@echo ... src/Elements/Entities/NotLiving/GreenMushroom.obj
+	@echo ... src/Elements/Entities/NotLiving/GreenMushroom.i
+	@echo ... src/Elements/Entities/NotLiving/GreenMushroom.s
+	@echo ... src/Elements/Entities/NotLiving/NonLiving.obj
+	@echo ... src/Elements/Entities/NotLiving/NonLiving.i
+	@echo ... src/Elements/Entities/NotLiving/NonLiving.s
+	@echo ... src/Elements/Entities/NotLiving/RedMushroom.obj
+	@echo ... src/Elements/Entities/NotLiving/RedMushroom.i
+	@echo ... src/Elements/Entities/NotLiving/RedMushroom.s
+	@echo ... src/Elements/Manager.obj
+	@echo ... src/Elements/Manager.i
+	@echo ... src/Elements/Manager.s
+	@echo ... src/Elements/Tiles/BigBlocks.obj
+	@echo ... src/Elements/Tiles/BigBlocks.i
+	@echo ... src/Elements/Tiles/BigBlocks.s
+	@echo ... src/Elements/Tiles/Clouds.obj
+	@echo ... src/Elements/Tiles/Clouds.i
+	@echo ... src/Elements/Tiles/Clouds.s
+	@echo ... src/Elements/Tiles/Floor.obj
+	@echo ... src/Elements/Tiles/Floor.i
+	@echo ... src/Elements/Tiles/Floor.s
+	@echo ... src/Elements/Tiles/Hill.obj
+	@echo ... src/Elements/Tiles/Hill.i
+	@echo ... src/Elements/Tiles/Hill.s
+	@echo ... src/Elements/Tiles/Interactables/Bricks.obj
+	@echo ... src/Elements/Tiles/Interactables/Bricks.i
+	@echo ... src/Elements/Tiles/Interactables/Bricks.s
+	@echo ... src/Elements/Tiles/Interactables/Interactable.obj
+	@echo ... src/Elements/Tiles/Interactables/Interactable.i
+	@echo ... src/Elements/Tiles/Interactables/Interactable.s
+	@echo ... src/Elements/Tiles/Interactables/LuckyBlock.obj
+	@echo ... src/Elements/Tiles/Interactables/LuckyBlock.i
+	@echo ... src/Elements/Tiles/Interactables/LuckyBlock.s
+	@echo ... src/Elements/Tiles/Interactables/Pipes.obj
+	@echo ... src/Elements/Tiles/Interactables/Pipes.i
+	@echo ... src/Elements/Tiles/Interactables/Pipes.s
+	@echo ... src/Elements/Tiles/Shrub.obj
+	@echo ... src/Elements/Tiles/Shrub.i
+	@echo ... src/Elements/Tiles/Shrub.s
+	@echo ... src/Elements/Tiles/Tile.obj
+	@echo ... src/Elements/Tiles/Tile.i
+	@echo ... src/Elements/Tiles/Tile.s
+	@echo ... src/Elements/Tiles/WoodenBlock.obj
+	@echo ... src/Elements/Tiles/WoodenBlock.i
+	@echo ... src/Elements/Tiles/WoodenBlock.s
+	@echo ... src/FileManager/Loader.obj
+	@echo ... src/FileManager/Loader.i
+	@echo ... src/FileManager/Loader.s
+	@echo ... src/FileManager/Saver.obj
+	@echo ... src/FileManager/Saver.i
+	@echo ... src/FileManager/Saver.s
+	@echo ... src/Level/Background.obj
+	@echo ... src/Level/Background.i
+	@echo ... src/Level/Background.s
+	@echo ... src/Level/Level.obj
+	@echo ... src/Level/Level.i
+	@echo ... src/Level/Level.s
 	@echo ... src/Main/Global.obj
 	@echo ... src/Main/Global.i
 	@echo ... src/Main/Global.s
 	@echo ... src/Main/Main.obj
 	@echo ... src/Main/Main.i
 	@echo ... src/Main/Main.s
+	@echo ... src/Settings/Settings.obj
+	@echo ... src/Settings/Settings.i
+	@echo ... src/Settings/Settings.s
+	@echo ... src/Tools/Clip.obj
+	@echo ... src/Tools/Clip.i
+	@echo ... src/Tools/Clip.s
+	@echo ... src/Tools/Dimension.obj
+	@echo ... src/Tools/Dimension.i
+	@echo ... src/Tools/Dimension.s
+	@echo ... src/Tools/HitBox.obj
+	@echo ... src/Tools/HitBox.i
+	@echo ... src/Tools/HitBox.s
+	@echo ... src/Tools/Point.obj
+	@echo ... src/Tools/Point.i
+	@echo ... src/Tools/Point.s
+	@echo ... src/Tools/String.obj
+	@echo ... src/Tools/String.i
+	@echo ... src/Tools/String.s
+	@echo ... src/Tools/Tool.obj
+	@echo ... src/Tools/Tool.i
+	@echo ... src/Tools/Tool.s
+	@echo ... src/Tools/Trigger.obj
+	@echo ... src/Tools/Trigger.i
+	@echo ... src/Tools/Trigger.s
 .PHONY : help
 
 

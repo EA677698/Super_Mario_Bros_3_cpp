@@ -38,6 +38,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/CLion 2020.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows.cmake"
   "D:/CLion 2020.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake"
   "D:/CLion 2020.2/bin/cmake/win/share/cmake-3.17/Modules/ProcessorCount.cmake"
+  "D:/cpp Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake"
+  "D:/cpp Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "D:/cpp Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "D:/cpp Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake"
+  "D:/cpp Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake"
+  "D:/cpp Libraries/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake"
   )
 
 # The corresponding makefile is:
