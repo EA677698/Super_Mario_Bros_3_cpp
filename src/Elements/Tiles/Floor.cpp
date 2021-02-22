@@ -23,10 +23,10 @@ void Floor::tick() {
 
 void Floor::changeLength() {
     elapsed = timerX.getElapsedTime();
-    if(Keyboard::isKeyPressed(Keyboard::LShift)&&elapsed.asMilliseconds()>100){
-        if(Keyboard::isKeyPressed(Keyboard::Right)){
+    if(SHIFT&&elapsed.asMilliseconds()>100){
+        if(RIGHT){
             middleBlocks++;
-        } else if(middleBlocks>=1&&Keyboard::isKeyPressed(Keyboard::Left)){
+        } else if(middleBlocks>=1&&LEFT){
             middleBlocks--;
         }
         timerX.restart();
@@ -37,10 +37,10 @@ void Floor::changeLength() {
 
 void Floor::changeHeight() {
     elapsed = timerY.getElapsedTime();
-    if(Keyboard::isKeyPressed(Keyboard::LShift)&&elapsed.asMilliseconds()>100){
-        if(Keyboard::isKeyPressed(Keyboard::Down)){
+    if(SHIFT&&elapsed.asMilliseconds()>100){
+        if(DOWN){
             layers++;
-        } else if(layers>=1&&Keyboard::isKeyPressed(Keyboard::Up)){
+        } else if(layers>=1&&UP){
             layers--;
         }
         timerY.restart();

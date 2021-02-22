@@ -7,6 +7,7 @@
 #include "Tile.h"
 #include "LayeredTile.h"
 #include "Adjustables.h"
+#include "../../Settings/Controls.h"
 
 
 class Hill : public Tile, public LayeredTile, public Adjustables {

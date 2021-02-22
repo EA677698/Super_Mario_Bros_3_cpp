@@ -2,12 +2,12 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include "../Tools/Dimension.h"
+#include "../Elements/Manager.h"
 
 using namespace sf;
 
 Music player;
-double scaleX, scaleY;
-Dimension windowSize;
+Manager game();
 
 void scaling(){
     if(!(scaleX == (windowSize.width/1980.0)&&scaleY==(windowSize.height/1080.0))){

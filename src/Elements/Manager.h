@@ -10,6 +10,7 @@
 #include "Tiles/Tile.h"
 #include "Entities/Mario/Player.h"
 #include "../Level/Level.h"
+using namespace std;
 
 class Manager {
 

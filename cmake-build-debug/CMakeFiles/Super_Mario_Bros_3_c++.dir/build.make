@@ -594,19 +594,19 @@ CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Elements\Manager.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Elements\Manager.cpp.s
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj: ../src/Tools/String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\String.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\String.cpp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/flags.make
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj: CMakeFiles/Super_Mario_Bros_3_c++.dir/includes_CXX.rsp
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj: ../src/Tools/GeneralTools.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\GeneralTools.cpp.obj -c C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\GeneralTools.cpp
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\String.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\String.cpp.i
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\GeneralTools.cpp > CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\GeneralTools.cpp.i
 
-CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\String.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\String.cpp.s
+CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\src\Tools\GeneralTools.cpp -o CMakeFiles\Super_Mario_Bros_3_c++.dir\src\Tools\GeneralTools.cpp.s
 
 # Object files for target Super_Mario_Bros_3_c++
 Super_Mario_Bros_3_c_______OBJECTS = \
@@ -647,7 +647,7 @@ Super_Mario_Bros_3_c_______OBJECTS = \
 "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj" \
 "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj" \
 "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj" \
-"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj"
+"CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj"
 
 # External object files for target Super_Mario_Bros_3_c++
 Super_Mario_Bros_3_c_______EXTERNAL_OBJECTS =
@@ -689,7 +689,7 @@ Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dime
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Manager.cpp.obj
-Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj
+Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj
 Super_Mario_Bros_3_c++.exe: CMakeFiles/Super_Mario_Bros_3_c++.dir/build.make
 Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-graphics-s-d.a
 Super_Mario_Bros_3_c++.exe: D:/cpp\ Libraries/SFML-2.5.1/lib/libsfml-audio-s-d.a

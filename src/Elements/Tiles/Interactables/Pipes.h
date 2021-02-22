@@ -7,6 +7,7 @@
 #include "Interactable.h"
 #include "../Adjustables.h"
 #include "../LayeredTile.h"
+#include "../../../Settings/Controls.h"
 
 class Pipes : public Interactable, public Adjustables, public LayeredTile {
 

@@ -7,7 +7,6 @@
 #include "../Elements.h"
 #include "../../Tools/HitBox.h"
 #include <SFML/Graphics.hpp>
-using namespace sf;
 
 class Tile : public Elements {
 
@@ -39,7 +38,7 @@ public:
 
     void setCollision(bool collision);
 
-    const HitBox &getHitbox() const;
+    const HitBox getHitBox() const;
 
     void setHitBox(const HitBox &hitbox);
 

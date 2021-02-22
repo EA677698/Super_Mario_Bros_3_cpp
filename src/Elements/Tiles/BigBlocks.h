@@ -7,6 +7,7 @@
 #include "Tile.h"
 #include "Adjustables.h"
 #include "LayeredTile.h"
+#include "../../Settings/Controls.h"
 
 class BigBlocks : public Tile, public Adjustables, public LayeredTile {
 

@@ -255,6 +255,12 @@
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Main.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
+		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Window.h">
+			<Option target="Super_Mario_Bros_3_c++"/>
+		</Unit>
+		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Settings/Controls.h">
+			<Option target="Super_Mario_Bros_3_c++"/>
+		</Unit>
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Settings/Settings.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
@@ -270,6 +276,9 @@
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Dimension.h">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
+		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/GeneralTools.cpp">
+			<Option target="Super_Mario_Bros_3_c++"/>
+		</Unit>
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/HitBox.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
@@ -280,9 +289,6 @@
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Point.h">
-			<Option target="Super_Mario_Bros_3_c++"/>
-		</Unit>
-		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/String.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Tool.cpp">

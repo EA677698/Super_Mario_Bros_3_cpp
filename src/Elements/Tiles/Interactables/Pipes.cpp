@@ -28,7 +28,7 @@ void Pipes::executeOnAction() {
     if(connectionPipe!=NULL){
         if(Main.game.getManager().getPlayer().getHitBox().intersects(this->getHitBox())){
             if(Main.game.getManager().getPlayer().getLocation().y<this->getLocation().y){
-                if(Keyboard::isKeyPressed(Keyboard::Down)){
+                if(DOWN){
                     Main.game.getManager().getPlayer().setLocation(new Point(connectionPipe.getLocation().x,connectionPipe.getLocation().y));
                 }
             }
@@ -56,10 +56,10 @@ void Pipes::calculateTileLayers() {
 
 void Pipes::changeHeight() {
     elapsed = timer.getElapsedTime();
-    if(Keyboard::isKeyPressed(Keyboard::LShift)&&elapsed.asMilliseconds()>100){
-        if(Keyboard::isKeyPressed(Keyboard::Down)){
+    if(SHIFT&&elapsed.asMilliseconds()>100){
+        if(DOWN){
             blocks+=2;
-        } else if(blocks>=2&&Keyboard::isKeyPressed(Keyboard::Up)){
+        } else if(blocks>=2&&UP){
             blocks-=2;
         }
         timer.restart();

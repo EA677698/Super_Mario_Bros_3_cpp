@@ -108,7 +108,7 @@ bool Entity::HasGravity() const {
     return hasGravity;
 }
 
-void Entity::setGravity(bool hasGravity) {
+void Entity::setHasGravity(bool hasGravity) {
     Entity::hasGravity = hasGravity;
 }
 
@@ -182,7 +182,7 @@ void Entity::tick() {
     offGround = touchingGround <= 0;
     if(hasGravity){
         elapsed = gravityTimer.getElapsedTime();
-        if(touchingGround==0&&!isSelected&&elapsed.asMicroseconds()>1200){
+        if(touchingGround==0&&!selected&&elapsed.asMicroseconds()>1200){
             addY((int)(gravity));
             gravityTimer.getElapsedTime();
         }
@@ -253,4 +253,12 @@ string Entity::to_string() {
 
 void Entity::setEntityName(const string &entityName) {
     Entity::entityName = entityName;
+}
+
+bool Entity::isSelected() const {
+    return selected;
+}
+
+void Entity::setSelected(bool selected) {
+    Entity::selected = selected;
 }

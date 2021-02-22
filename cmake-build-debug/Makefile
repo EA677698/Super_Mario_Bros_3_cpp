@@ -1033,6 +1033,33 @@ src/Tools/Dimension.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.s
 .PHONY : src/Tools/Dimension.cpp.s
 
+src/Tools/GeneralTools.obj: src/Tools/GeneralTools.cpp.obj
+
+.PHONY : src/Tools/GeneralTools.obj
+
+# target to build an object file
+src/Tools/GeneralTools.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj
+.PHONY : src/Tools/GeneralTools.cpp.obj
+
+src/Tools/GeneralTools.i: src/Tools/GeneralTools.cpp.i
+
+.PHONY : src/Tools/GeneralTools.i
+
+# target to preprocess a source file
+src/Tools/GeneralTools.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.i
+.PHONY : src/Tools/GeneralTools.cpp.i
+
+src/Tools/GeneralTools.s: src/Tools/GeneralTools.cpp.s
+
+.PHONY : src/Tools/GeneralTools.s
+
+# target to generate assembly for a file
+src/Tools/GeneralTools.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.s
+.PHONY : src/Tools/GeneralTools.cpp.s
+
 src/Tools/HitBox.obj: src/Tools/HitBox.cpp.obj
 
 .PHONY : src/Tools/HitBox.obj
@@ -1086,33 +1113,6 @@ src/Tools/Point.s: src/Tools/Point.cpp.s
 src/Tools/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.s
 .PHONY : src/Tools/Point.cpp.s
-
-src/Tools/String.obj: src/Tools/String.cpp.obj
-
-.PHONY : src/Tools/String.obj
-
-# target to build an object file
-src/Tools/String.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj
-.PHONY : src/Tools/String.cpp.obj
-
-src/Tools/String.i: src/Tools/String.cpp.i
-
-.PHONY : src/Tools/String.i
-
-# target to preprocess a source file
-src/Tools/String.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.i
-.PHONY : src/Tools/String.cpp.i
-
-src/Tools/String.s: src/Tools/String.cpp.s
-
-.PHONY : src/Tools/String.s
-
-# target to generate assembly for a file
-src/Tools/String.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.s
-.PHONY : src/Tools/String.cpp.s
 
 src/Tools/Tool.obj: src/Tools/Tool.cpp.obj
 
@@ -1276,15 +1276,15 @@ help:
 	@echo ... src/Tools/Dimension.obj
 	@echo ... src/Tools/Dimension.i
 	@echo ... src/Tools/Dimension.s
+	@echo ... src/Tools/GeneralTools.obj
+	@echo ... src/Tools/GeneralTools.i
+	@echo ... src/Tools/GeneralTools.s
 	@echo ... src/Tools/HitBox.obj
 	@echo ... src/Tools/HitBox.i
 	@echo ... src/Tools/HitBox.s
 	@echo ... src/Tools/Point.obj
 	@echo ... src/Tools/Point.i
 	@echo ... src/Tools/Point.s
-	@echo ... src/Tools/String.obj
-	@echo ... src/Tools/String.i
-	@echo ... src/Tools/String.s
 	@echo ... src/Tools/Tool.obj
 	@echo ... src/Tools/Tool.i
 	@echo ... src/Tools/Tool.s

@@ -8,8 +8,10 @@
 
 class Elements {
 
+public:
+    enum Layer{FRONT_LAYER,MIDDLE_LAYER,BACK_LAYER, NONE};
+
 protected:
-    enum Layer{FRONT_LAYER,MIDDLE_LAYER,BACK_LAYER};
     Layer layer;
     Point location;
     bool unloaded;

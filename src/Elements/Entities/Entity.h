@@ -9,8 +9,6 @@
 #include <SFML/Graphics.hpp>
 #include "../Elements.h"
 #include "../Tiles/tile.h"
-#include "../../Main/Main.cpp"
-using namespace sf;
 
 class Entity: public Elements {
 
@@ -26,7 +24,13 @@ protected:
     HitBox hitBox;
     bool allowedMoving = true;
     bool dead = false;
-    bool collision, offGround, isSelected, hasGravity;
+    bool collision, offGround, selected, hasGravity;
+public:
+    bool isSelected() const;
+
+    void setSelected(bool selected);
+
+protected:
     string entityName;
 public:
     Entity();
@@ -93,7 +97,7 @@ public:
 
     bool HasGravity() const;
 
-    void setGravity(bool hasGravity);
+    void setHasGravity(bool hasGravity);
 
     Entity(Layer layer, Point coordinates, int width, int height, bool hasCollision);
 

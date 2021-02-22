@@ -41,24 +41,24 @@ void BigBlocks::tick() {
 
 void BigBlocks::changeLength() {
     elapsed = timerX.getElapsedTime();
-    if(Keyboard::isKeyPressed(Keyboard::LShift)&&elapsed.asMilliseconds()>100){
-        if(Keyboard::isKeyPressed(Keyboard::Right)){
+    if(SHIFT&&elapsed.asMilliseconds()>100){
+        if(RIGHT){
             extraYLayers++;
-        } else if(Keyboard::isKeyPressed(Keyboard::Left)&&extraYLayers>-1){
+        } else if(LEFT&&extraYLayers>-1){
             extraYLayers--;
         }
         setWidth(180+(60*extraYLayers));
         calculateTileLayers();
-        timerX.restart()
+        timerX.restart();
     }
 }
 
 void BigBlocks::changeHeight() {
     elapsed = timerY.getElapsedTime();
-    if(Keyboard::isKeyPressed(Keyboard::LShift)&&elapsed.asMilliseconds()>100){
-        if(Keyboard::isKeyPressed(Keyboard::Down)){
+    if(SHIFT&&elapsed.asMilliseconds()>100){
+        if(DOWN){
             extraXLayers++;
-        } else if(Keyboard::isKeyPressed(Keyboard::Up)){
+        } else if(UP){
             if(extraXLayers>-1){
                 extraXLayers--;
             }

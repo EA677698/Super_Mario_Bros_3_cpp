@@ -20,7 +20,7 @@ void Fireball::executeUponTouch(Player player) {
                         SFX.down1.setFramePosition(0);
                         SFX.down1.start();
                         break;
-                    case player.BIG: player.setPower(Powers.SMALL);
+                    case player.BIG: player.setPower(player.SMALL);
                         SFX.pipe.setFramePosition(0);
                         SFX.pipe.start();
                         break;

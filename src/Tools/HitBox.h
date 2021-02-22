@@ -32,6 +32,10 @@ public:
     Dimension getSize();
     int getCenterX();
     int getCenterY();
+    int getMinX();
+    int getMaxX();
+    int getMinY();
+    int getMaxY();
     int outcode(double x, double y);
     void setBounds(HitBox &hitBox);
     void setBounds(int x, int y, int width, int height);

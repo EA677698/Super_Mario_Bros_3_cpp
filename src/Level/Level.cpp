@@ -4,7 +4,7 @@
 
 #include "Level.h"
 
-Level::Level(Level::Background background) {
+Level::Level(Level::Background background) : Elements(NONE, Point(0,0)){
 
 }
 

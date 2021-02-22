@@ -186,4 +186,20 @@ int HitBox::getCenterY() {
     return y+(height/2);
 }
 
+int HitBox::getMinX() {
+    return x;
+}
+
+int HitBox::getMaxX() {
+    return x+width;
+}
+
+int HitBox::getMinY() {
+    return y;
+}
+
+int HitBox::getMaxY() {
+    return y+height;
+}
+
 

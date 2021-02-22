@@ -3,8 +3,9 @@
 //
 
 #include "LuckyBlock.h"
+#include "../../Entities/NotLiving/Coin.h"
 
-LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Entity containedEntity) : Interactable(layer, location, collision) {
+LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Coin *containedEntity) : Interactable(layer, location, collision) {
     this->containedEntity = containedEntity;
     setTileName("LuckyBlock");
 }

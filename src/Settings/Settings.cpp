@@ -1,6 +1,7 @@
 //
 // Created by Erick on 2/20/2021.
 //
+#include "../Main/Main.cpp"
 
 bool debug = false;
 bool hitBoxes = false;
@@ -12,7 +13,7 @@ int tpsCap = 100000;
 
 void tick(){
     if(!debug){
-        if(Main.game.getManager().getSelectedEntity()!=null){
+        if(.getSelectedEntity()!=null){
             Main.game.getManager().getSelectedEntity().setSelected(false);
             Main.game.getManager().getSelectedEntity().setDirection(Main.game.getManager().getPreviousDirection());
             Main.game.getManager().setSelectedEntity(null);

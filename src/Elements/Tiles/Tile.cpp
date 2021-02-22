@@ -28,7 +28,7 @@ void Tile::setCollision(bool collision) {
     Tile::collision = collision;
 }
 
-const HitBox &Tile::getHitbox() const {
+const HitBox Tile::getHitBox() const {
     return hitBox;
 }
 

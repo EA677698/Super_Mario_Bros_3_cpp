@@ -42,10 +42,10 @@ void Hill::tick() {
 
 void Hill::changeHeight() {
     elapsed = timer.getElapsedTime();
-    if(Keyboard::isKeyPressed(Keyboard::LShift)&&elapsed.asMilliseconds()>100){
-        if(Keyboard::isKeyPressed(Keyboard::Down)){
+    if(SHIFT&&elapsed.asMilliseconds()>100){
+        if(DOWN){
             blocks+=2;
-        } else if(blocks>=2&&Keyboard::isKeyPressed(Keyboard::Up)){
+        } else if(blocks>=2&&UP){
             blocks-=2;
         }
         timer.restart();

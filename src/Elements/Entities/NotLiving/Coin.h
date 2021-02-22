@@ -9,7 +9,7 @@
 class Coin : public NonLiving {
 
 public:
-    Coin(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision);
+    Coin(Layer layer, Point *coordinates, int width, int height, int direction, bool hasCollision);
     Coin(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision);
     Coin(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision);
     void executeUponTouch(Player player) override;

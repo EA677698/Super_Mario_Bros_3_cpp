@@ -51,14 +51,14 @@ void Player::jump() {
         if(getYVelocity()<0){
             setYVelocity(getYVelocity()+1);
         } else {
-            setGravity(true);
+            setHasGravity(true);
         }
         jumpTimer.restart();
     }
 }
 
 void Player::walk() {
-    if (!Keyboard::isKeyPressed(Keyboard::X)) {
+    if (ALT) {
         elapsed = runTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>300) {
             if (getXVelocity() < WALK_SPEED) {
@@ -164,16 +164,16 @@ void Player::tick() {
         elapsed = movementTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>10){
             addX((int)(getXVelocity()*getDirection()));
-            if(Keyboard::isKeyPressed(Keyboard::Space)){
+            if(JUMP){
                 if(initialJump){
                     setYVelocity(MAX_JUMP_SPEED);
-                    setGravity(false);
+                    setHasGravity(false);
                     setSpriteIndex(3);
                     initialJump = false;
                 }
                 jump();
             } else {
-                setGravity(true);
+                setHasGravity(true);
             }
             movementTimer.restart();
         }
@@ -185,11 +185,11 @@ void Player::tick() {
         } else if(!isOffGround()&&getXVelocity()==0) {
             setSpriteIndex(0);
         }
-        if(Keyboard::isKeyPressed(Keyboard::Right)){
+        if(RIGHT){
             setDirection(1);
             walk();
             previousDirection = getDirection();
-        } else if(Keyboard::isKeyPressed(Keyboard::Left)){
+        } else if(LEFT){
             setDirection(-1);
             walk();
             previousDirection = getDirection();

@@ -4,7 +4,7 @@
 
 #include "Coin.h"
 
-Coin::Coin(Elements::Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision)
+Coin::Coin(Elements::Layer layer, Point *coordinates, int width, int height, int direction, bool hasCollision)
         : NonLiving(layer, coordinates, width, height, direction, hasCollision) {
 
 }

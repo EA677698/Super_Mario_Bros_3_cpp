@@ -37,9 +37,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Settings/Settings.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Settings/Settings.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Clip.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Clip.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Dimension.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Dimension.cpp.obj"
+  "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/GeneralTools.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/GeneralTools.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/HitBox.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/HitBox.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Point.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Point.cpp.obj"
-  "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/String.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/String.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Tool.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Tool.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Tools/Trigger.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Tools/Trigger.cpp.obj"
   )

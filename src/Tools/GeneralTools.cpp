@@ -2,6 +2,7 @@
 // Created by Erick on 2/21/2021.
 //
 #include <string>
+#include "../Elements/Entities/Entity.h"
 
 using namespace std;
 string toLower(string input){
@@ -34,4 +35,22 @@ bool contains(string input, string keyword){
     }
     return false;
 
+}
+
+void vecRemove(Entity *ent, vector<Entity*> vector){
+    for(int i = 0; i<vector.size(); i++){
+        if(vector[i]==ent){
+            delete ent;
+            vector.erase(vector.begin()+i);
+        }
+    }
+}
+
+void vecRemove(Tile *tile, vector<Tile*> vector){
+    for(int i = 0; i<vector.size(); i++){
+        if(vector[i] == tile){
+            delete tile;
+            vector.erase(vector.begin()+i);
+        }
+    }
 }

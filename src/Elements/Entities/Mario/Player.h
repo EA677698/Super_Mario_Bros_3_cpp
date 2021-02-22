@@ -4,6 +4,7 @@
 
 #ifndef SUPER_MARIO_BROS_3_C_PLAYER_H
 #define SUPER_MARIO_BROS_3_C_PLAYER_H
+#include "../../../Settings/Controls.h"
 #include "../Entity.h"
 
 
