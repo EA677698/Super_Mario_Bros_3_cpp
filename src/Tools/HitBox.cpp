@@ -110,7 +110,7 @@ bool HitBox::contains(int X, int Y, int W, int H) {
     return true;
 }
 
-int HitBox::outcode(double x, double y) {
+int HitBox::outcode(double x, double y) const {
     /*
      * Note on casts to double below.  If the arithmetic of
      * x+w or y+h is done in int, then we may get integer
@@ -138,7 +138,7 @@ int HitBox::outcode(double x, double y) {
     return out;
 }
 
-bool HitBox::intersects(HitBox &hitBox) {
+bool HitBox::intersects(HitBox &hitBox) const {
     int tw = HitBox::width;
     int th = HitBox::height;
     int rw = hitBox.getWidth();
@@ -186,19 +186,19 @@ int HitBox::getCenterY() {
     return y+(height/2);
 }
 
-int HitBox::getMinX() {
+int HitBox::getMinX() const {
     return x;
 }
 
-int HitBox::getMaxX() {
+int HitBox::getMaxX() const {
     return x+width;
 }
 
-int HitBox::getMinY() {
+int HitBox::getMinY() const {
     return y;
 }
 
-int HitBox::getMaxY() {
+int HitBox::getMaxY() const {
     return y+height;
 }
 

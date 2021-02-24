@@ -32,11 +32,11 @@ public:
     Dimension getSize();
     int getCenterX();
     int getCenterY();
-    int getMinX();
-    int getMaxX();
-    int getMinY();
-    int getMaxY();
-    int outcode(double x, double y);
+    int getMinX() const;
+    int getMaxX() const;
+    int getMinY() const;
+    int getMaxY() const;
+    int outcode(double x, double y) const;
     void setBounds(HitBox &hitBox);
     void setBounds(int x, int y, int width, int height);
     Point getLocation();
@@ -46,7 +46,7 @@ public:
     void move(Point &point);
     bool contains(Point point, Dimension dimension);
     bool contains(int X, int Y, int W, int H);
-    bool intersects(HitBox &hitBox);
+    bool intersects(HitBox &hitBox) const;
     string toString();
 
 

@@ -17,15 +17,19 @@
 #include "Entities/NotLiving/RedMushroom.h"
 #include "Entities/Enemies/KoopaTroopa.h"
 #include "Entities/Enemies/Goomba.h"
+#include "Entities/NotLiving/Fireball.h"
 #include "Tiles/Shrub.h"
+#include "../Main/Global.cpp"
+#include "../Settings/Settings.cpp"
 #include "../Tools/Clip.h"
 #include "../Tools/GeneralTools.cpp"
+#include "../Tools/Trigger.h"
 
 Manager::Manager() {}
 
 bool Manager::commandInput(String input) {
-    if(input.contains(" ")) {
-        String end = input.substring(input.find(" ") + 1);
+    if(contains(input," ")) {
+        string end = input.substring(input.find(" ") + 1);
         switch (input.substring(0, input.find(" ")-1)) {
             case "spawn":
                 return spawnElement(end);
@@ -37,14 +41,14 @@ bool Manager::commandInput(String input) {
                 return freezeElements(end);
             case "background":
                 try {
-                    level.setBackground(Background.valueOf(end.toUpperCase()));
-                } catch (Exception e) {
-                    e.printStackTrace();
+                    level->setBackground(Background.valueOf(end.toUpperCase()));
+                } catch (int e) {
+                    cout<<"An error has occured: "<<e<<endl;
                 }
                 return true;
             case "save":
-                Saver.world = Integer.parseInt(end.substring(0,end.indexOf(" ")));
-                Saver.level = Integer.parseInt(end.substring(end.indexOf(" ")+1));
+                Saver.world = stoi(end.substr(0,end.find(" ")));
+                Saver.level = stoi(end.substr(end.find(" ")+1));
                 Saver.createLevel();
                 return true;
             case "load":
@@ -52,22 +56,22 @@ bool Manager::commandInput(String input) {
                 Loader.loadLevel(end);
                 return true;
             case "bgm":
-                level.changeMusic(BGM.valueOf(end.toUpperCase()));
+                level->changeMusic(BGM.valueOf(end.toUpperCase()));
                 return true;
         }
     } else {
         switch (input){
             case "debug":
-                Settings.debug = !Settings.debug;
+                debug = !debug;
                 return true;
             case "fps":
-                Settings.fps = !Settings.fps;
+                fps = !fps;
                 return true;
             case "hitbox":
-                Settings.hitBoxes = !Settings.hitBoxes;
+                hitBoxes = !hitBoxes;
                 return true;
             case "crt":
-                Settings.crt = !Settings.crt;
+                crt = !crt;
                 return true;
             case "quit":
                 System.exit(0);
@@ -78,23 +82,23 @@ bool Manager::commandInput(String input) {
                 level = new Level(Background.AQUA_BACKGROUND, BGM.GRASS_LAND);
                 return true;
             case "mute":
-                Settings.muted = !Settings.muted;
+                muted = !muted;
         }
     }
     return false;
 }
 
 bool Manager::addStats(string stat) {
-    int end = Integer.parseInt(stat.substring(stat.indexOf(" ")+1));
-    switch (stat.substring(0,stat.indexOf(" "))){
+    int end = stoi(stat.substr(stat.find(" ")-1));
+    switch (stat.substr(0,stat.find(" "))){
         case "score":
-            Global.score += end;
+            score += end;
             return true;
         case "money":
-            Global.money += end;
+            money += end;
             return true;
         case "lives":
-            Global.lives += end;
+            lives += end;
             return true;
     }
     return false;
@@ -103,42 +107,42 @@ bool Manager::addStats(string stat) {
 bool Manager::freezeElements(string element) {
     switch (element){
         case "all":
-            for(Entity entity: ents){
-                entity.setAllowedMoving(!entity.isAllowedMoving());
+            for(Entity *entity: ents){
+                entity->setAllowedMoving(!entity->isAllowedMoving());
             }
             return true;
         case "goomba":
-            for(Entity entity: ents){
-                if(entity instanceof Goomba){
-                    entity.setAllowedMoving(!entity.isAllowedMoving());
+            for(Entity *entity: ents){
+                if(Goomba* ent = dynamic_cast<Goomba*>(entity)){
+                    entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
         case "enemies":
-            for(Entity entity: ents){
-                if(entity instanceof Enemy){
-                    entity.setAllowedMoving(!entity.isAllowedMoving());
+            for(Entity *entity: ents){
+                if(Enemy* ent = dynamic_cast<Enemy*>(entity)){
+                    entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
         case "koopatroopa":
-            for(Entity entity: ents){
-                if(entity instanceof KoopaTroopa){
-                    entity.setAllowedMoving(!entity.isAllowedMoving());
+            for(Entity *entity: ents){
+                if(KoopaTroopa* ent = dynamic_cast<KoopaTroopa*>(entity)){
+                    entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
         case "fireball":
-            for(Entity entity: ents){
-                if(entity instanceof Fireball){
-                    entity.setAllowedMoving(!entity.isAllowedMoving());
+            for(Entity *entity: ents){
+                if(Fireball* ent = dynamic_cast<Fireball*>(entity)){
+                    entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
         case "hammerbro":
-            for(Entity entity: ents){
-                if(entity instanceof HammerBro){
-                    entity.setAllowedMoving(!entity.isAllowedMoving());
+            for(Entity *entity: ents){
+                if(HammerBro* ent = dynamic_cast<HammerBro*>(entity)){
+                    entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
@@ -208,25 +212,25 @@ void Manager::culling() {
     for(Entity *entity: ents){
         //entity.setUnloaded(!screen.intersects(entity.getHitBox()) && !screen.contains(entity.getHitBox()));
         entity->setUnloaded((entity->getHitBox().getMinX()<0&&entity->getHitBox().getMaxX()<0)||
-                           (entity->getHitBox().getMinX()>1920&&entity->getHitBox().getMaxX()>1920)||(entity->getHitBox().getMinY()>840&&entity.getHitBox().getMaxY()>840)||
+                           (entity->getHitBox().getMinX()>1920&&entity->getHitBox().getMaxX()>1920)||(entity->getHitBox().getMinY()>840&&entity->getHitBox().getMaxY()>840)||
                            (entity->getHitBox().getMinY()<0&&entity->getHitBox().getMaxY()<0));
     }
     for(Tile *tile: tiles){
         tile->setUnloaded((tile->getHitBox().getMinX()<0&&tile->getHitBox().getMaxX()<0)||
-                         (tile->getHitBox().getMinX()>1920&&tile->getHitBox().getMaxX()>1920)||(tile->getHitBox().getMinY()>840&&tile.getHitBox().getMaxY()>840)||
+                         (tile->getHitBox().getMinX()>1920&&tile->getHitBox().getMaxX()>1920)||(tile->getHitBox().getMinY()>840&&tile->getHitBox().getMaxY()>840)||
                          (tile->getHitBox().getMinY()<0&&tile->getHitBox().getMaxY()<0));
         //tile.setUnloaded(!screen.intersects(tile.getHitBox()) && !screen.contains(tile.getHitBox()));
     }
 }
 
 void Manager::tick() {
-    if(Settings.debug){
+    if(debug){
         freeEntity();
     }
     sideScroll();
     collision();
     culling();
-    if(Settings.debug&&!Controls.console){
+    if(debug&&!CONSOLE){
         deleteSelected();
     }
 }
@@ -253,8 +257,8 @@ bool Manager::removeElement(string element) {
 bool Manager::spawnElement(string element) {
     String temp;
     Point location(windowSize.width/2,windowSize.height/2);
-    if(element.contains(" ")){
-        temp = element.substring(0, element.indexOf(" "));
+    if(contains(element," ")){
+        temp = element.substr(0, element.find(" "));
     } else {
         temp = element;
     }
@@ -324,8 +328,8 @@ bool Manager::spawnElement(string element) {
             tiles.push_back(new Clip(Elements::FRONT_LAYER, location,0,1));
             return true;
         case "trigger":
-            String command = element.substring(element.indexOf(" ")+1, element.lastIndexOf(" "));
-            int activations = Integer.parseInt(element.substring(element.lastIndexOf(" ")+1));
+            String command = element.substr(element.find(" ")+1, element.find_last_of(" "));
+            int activations = stoi(element.substr(element.find_last_of(" ")+1));
             tiles.push_back(new Trigger(Elements::FRONT_LAYER, location, 0,1, command, activations));
             return true;
     }
@@ -353,7 +357,7 @@ void Manager::deleteSelected() {
 }
 
 void Manager::sideScroll() {
-    if(Settings.debug&&!SHIFT){
+    if(debug&&!SHIFT){
         elapsed = debugScroll.getElapsedTime();
         if(elapsed.asMilliseconds()>70){
             if(Keyboard::isKeyPressed(Keyboard::Right)){
@@ -381,8 +385,8 @@ void Manager::sideScroll() {
     }
     if(mario == NULL){
         for(Entity *ent: ents){
-            if(ent instanceof mario){
-                mario = (mario) ent;
+            if(Player* ent = dynamic_cast<Player*>(ent)){
+                mario = ent;
             }
         }
     }
@@ -439,7 +443,7 @@ void Manager::collision() {
     for(Entity *ent : ents){
         if(ent->isCollision()&&!ent->isUnloaded()){
             if(mario!=NULL){
-                if(ent instanceof Enemy){
+                if(Enemy* entity = dynamic_cast<Enemy*>(ent)){
                     elapsed = hitTimer.getElapsedTime();
                     if(elapsed.asMilliseconds()>2000){
                         // If an enemy hits mario from his sides
@@ -467,9 +471,9 @@ void Manager::collision() {
                         }
                     }
                     //Activates Non Living Entity Special Action towards Mario
-                } else if(ent instanceof NotLiving){
+                } else if(NonLiving* entity = dynamic_cast<NonLiving*>(ent)){
                     if(ent->getHitBox().intersects(mario->getHitBox())){
-                        ((NotLiving) ent).executeUponTouch(mario);
+                        entity->executeUponTouch(*mario);
                     }
                 }
             }
@@ -477,10 +481,12 @@ void Manager::collision() {
             for(Entity *ent2: ents){
                 if(ent!=ent2) {
                     if (ent2->isCollision() && !ent2->isUnloaded()) {
-                        if (ent instanceof Enemy && ent2 instanceof Enemy) {
-                            if (ent->getHitBox().intersects(ent2->getHitBox())) {
-                                ent->setDirection(ent->getDirection() * -1);
-                                ent2->setDirection(ent2->getDirection() * -1);
+                        if (Enemy* ent = dynamic_cast<Enemy*>(ent)) {
+                            if(Enemy* ent2 = dynamic_cast<Enemy*>(ent2)) {
+                                if (ent->getHitBox().intersects(ent2->getHitBox())) {
+                                    ent->setDirection(ent->getDirection() * -1);
+                                    ent2->setDirection(ent2->getDirection() * -1);
+                                }
                             }
                         }
                     }
@@ -491,9 +497,9 @@ void Manager::collision() {
                     if(tile->getHitBox().intersects(ent->getHitBox())){
                         //If an entity hits something from his sides while moving
                         int side = tile->getHitBox().outcode(ent->getHitBox().getCenterX(),ent->getHitBox().getCenterY());
-                        if(!(tile instanceof BigBlocks)&&(side==1||side==4||side==9||side==12)){
+                        if(!(BigBlocks* ent = dynamic_cast<BigBlocks*>(tile))&&(side==1||side==4||side==9||side==12)){
                             if(ent->isFacingTile(tile)){
-                                if(ent instanceof mario){
+                                if(Player* ent = dynamic_cast<Player*>(ent)){
                                     if(ent->getDirection()==1){
                                         mario->setXVelocity(0);
                                         RIGHT = false;
@@ -502,11 +508,11 @@ void Manager::collision() {
                                         LEFT = false;
                                     }
                                 } else {
-                                    ent.setDirection(ent.getDirection()*-1);
+                                    ent->setDirection(ent->getDirection()*-1);
                                 }
                             } //If Mario Hits something above him while jumping
                         } else if(side==8||side==9||side==12){
-                            if(ent instanceof mario){
+                            if(Player* ent = dynamic_cast<Player*>(ent)){
                                 ent->setYVelocity(0);
                                 ent->setHasGravity(true);
                             }
