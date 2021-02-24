@@ -12,10 +12,20 @@ Level::Background Level::getBackground() {
     return Level::BLUE_BACKGROUND;
 }
 
-string Level::background_value_of(Level::Background background) {
-    return std::__cxx11::string();
+void Level::setBackground(Background background) {
+
 }
 
-void Level::setBackground(Level::Background background) {
-
+Level::Background string_to_background(string input) {
+    int ret = string_match(input,{"AQUA_BACKGROUND","BLUE_BACKGROUND","PINK_BACKGROUND","BLACK_BACKGROUND","ICE_BACKGROUND",
+                        "CARAMEL_BACKGROUND","PORTAGE_BACKGROUND"},7);
+    switch (ret) {
+        case 0: return Level::AQUA_BACKGROUND;
+        case 1: return Level::BLUE_BACKGROUND;
+        case 2: return Level::PINK_BACKGROUND;
+        case 3: return Level::BLACK_BACKGROUND;
+        case 4: return Level::ICE_BACKGROUND;
+        case 5: return Level::CARAMEL_BACKGROUND;
+        case 6: return Level::PORTAGE_BACKGROUND;
+    }
 }

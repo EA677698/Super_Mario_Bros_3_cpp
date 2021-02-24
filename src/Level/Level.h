@@ -6,6 +6,7 @@
 #define SUPER_MARIO_BROS_3_C_LEVEL_H
 #include "../Elements/Elements.h"
 #include <SFML/Graphics.hpp>
+#include "../Tools/GeneralTools.cpp"
 
 
 class Level : public Elements{
@@ -16,13 +17,13 @@ public:
     Level(Background background);
     Background getBackground();
     //Sprite getBackgroundSprite();
-    string background_value_of(Background background);
     void changeBGM();
     void setBackground(Background background);
 
 
 
 };
+Level::Background string_to_background(string input);
 
 
 #endif //SUPER_MARIO_BROS_3_C_LEVEL_H

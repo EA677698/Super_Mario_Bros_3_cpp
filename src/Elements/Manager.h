@@ -55,7 +55,7 @@ public:
 
     void setLevel(Level *level);
     Manager();
-    bool commandInput(String input);
+    bool commandInput(string input);
     bool addStats(string stat);
     bool freezeElements(string element);
     void resetEntities();

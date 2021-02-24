@@ -36,6 +36,15 @@ bool contains(string input, string keyword){
 
 }
 
+int string_match(string input, char list[][], int size){
+    for(int i = 0; i<size; i++){
+        if(input==list[i]){
+            return i;
+        }
+    }
+}
+
+
 void vecRemove(Entity *ent, vector<Entity*> vector){
     for(int i = 0; i<vector.size(); i++){
         if(vector[i]==ent){

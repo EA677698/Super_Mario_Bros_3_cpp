@@ -27,61 +27,63 @@
 
 Manager::Manager() {}
 
-bool Manager::commandInput(String input) {
+bool Manager::commandInput(string input) {
     if(contains(input," ")) {
-        string end = input.substring(input.find(" ") + 1);
-        switch (input.substring(0, input.find(" ")-1)) {
-            case "spawn":
+        string end = input.substr(input.find(" ") + 1);
+        int ret = string_match(input.substr(0, input.find(" ")-1), {"spawn","remove","add","freeze","background","save","load","bgm"}, 8);
+        switch (ret) {
+            case 1:
                 return spawnElement(end);
-            case "remove":
+            case 2:
                 return removeElement(end);
-            case "add":
+            case 3:
                 return addStats(end);
-            case "freeze":
+            case 4:
                 return freezeElements(end);
-            case "background":
+            case 5:
                 try {
-                    level->setBackground(Background.valueOf(end.toUpperCase()));
+                    level->setBackground(string_to_background(toUpper(end)));
                 } catch (int e) {
                     cout<<"An error has occured: "<<e<<endl;
                 }
                 return true;
-            case "save":
+            case 6:
                 Saver.world = stoi(end.substr(0,end.find(" ")));
                 Saver.level = stoi(end.substr(end.find(" ")+1));
                 Saver.createLevel();
                 return true;
-            case "load":
+            case 7:
                 //Loader.loadLevel(end);
                 Loader.loadLevel(end);
                 return true;
-            case "bgm":
-                level->changeMusic(BGM.valueOf(end.toUpperCase()));
+            case 8:
+                level->changeMusic(BGM.valueOf(toUpper(end)));
                 return true;
         }
     } else {
-        switch (input){
-            case "debug":
+        int ret = string_match(input, {"debug","fps","hitbox","crt","quit","unload","mute"},7);
+        switch (ret){
+            case 0:
                 debug = !debug;
                 return true;
-            case "fps":
+            case 1:
                 fps = !fps;
                 return true;
-            case "hitbox":
+            case 2:
                 hitBoxes = !hitBoxes;
                 return true;
-            case "crt":
+            case 3:
                 crt = !crt;
                 return true;
-            case "quit":
+            case 4:
                 System.exit(0);
                 return true;
-            case "unload":
+            case 5:
                 ents.clear();
                 tiles.clear();
-                level = new Level(Background.AQUA_BACKGROUND, BGM.GRASS_LAND);
+                level = new Level(Level::AQUA_BACKGROUND, BGM.GRASS_LAND);
                 return true;
-            case "mute":
+            case 6:
                 muted = !muted;
         }
     }
@@ -90,14 +92,15 @@ bool Manager::commandInput(String input) {
 
 bool Manager::addStats(string stat) {
     int end = stoi(stat.substr(stat.find(" ")-1));
-    switch (stat.substr(0,stat.find(" "))){
-        case "score":
+    int ret = string_match(stat.substr(0,stat.find(" ")), {"score","money","lives"},3);
+    switch (ret){
+        case 0:
             score += end;
             return true;
-        case "money":
+        case 1:
             money += end;
             return true;
-        case "lives":
+        case 2:
             lives += end;
             return true;
     }
@@ -105,41 +108,42 @@ bool Manager::addStats(string stat) {
 }
 
 bool Manager::freezeElements(string element) {
-    switch (element){
-        case "all":
+    int ret = string_match(element,{"all","goomba","enemies","koopatroopa","fireball","hammerbro"},6);
+    switch (ret){
+        case 0:
             for(Entity *entity: ents){
                 entity->setAllowedMoving(!entity->isAllowedMoving());
             }
             return true;
-        case "goomba":
+        case 1:
             for(Entity *entity: ents){
                 if(Goomba* ent = dynamic_cast<Goomba*>(entity)){
                     entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
-        case "enemies":
+        case 2:
             for(Entity *entity: ents){
                 if(Enemy* ent = dynamic_cast<Enemy*>(entity)){
                     entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
-        case "koopatroopa":
+        case 3:
             for(Entity *entity: ents){
                 if(KoopaTroopa* ent = dynamic_cast<KoopaTroopa*>(entity)){
                     entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
-        case "fireball":
+        case 4:
             for(Entity *entity: ents){
                 if(Fireball* ent = dynamic_cast<Fireball*>(entity)){
                     entity->setAllowedMoving(!entity->isAllowedMoving());
                 }
             }
             return true;
-        case "hammerbro":
+        case 5:
             for(Entity *entity: ents){
                 if(HammerBro* ent = dynamic_cast<HammerBro*>(entity)){
                     entity->setAllowedMoving(!entity->isAllowedMoving());
@@ -262,72 +266,74 @@ bool Manager::spawnElement(string element) {
     } else {
         temp = element;
     }
-    switch (temp){
-        case "mario":
+    int ret = string_match(temp, {"mario","goomba","koopatroopa","redmushroom","greenmushroom","coin","floor","woodenblock","luckyblock"
+    ,"hill1","hill2","brick","firehammerbro","pipe","cloud1","bg","bp","bb","bw","shrub","clip","trigger"},22);
+    switch (ret){
+        case 0:
             marioCheck();
             ents.push_back(new Player(Elements::MIDDLE_LAYER, location,60,60, true));
             return true;
-        case "goomba":
+        case 1:
             ents.push_back(new Goomba(Elements::MIDDLE_LAYER, location,60,60,1, true));
             return true;
-        case "koopatroopa":
+        case 2:
             ents.push_back(new KoopaTroopa(Elements::MIDDLE_LAYER, location,60,98,1, true));
             return true;
-        case "redmushroom":
+        case 3:
             ents.push_back(new RedMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true));
             return true;
-        case "greenmushroom":
+        case 4:
             ents.push_back(new GreenMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true));
             return true;
-        case "coin":
+        case 5:
             ents.push_back(new Coin(Elements::MIDDLE_LAYER, location,60,60,0,true));
             return true;
-        case "floor":
+        case 6:
             tiles.push_back(new Floor(Elements::MIDDLE_LAYER, location,true,8,1));
             return true;
-        case "woodenblock":
+        case 7:
             tiles.push_back(new WoodenBlock(Elements::MIDDLE_LAYER, location,true));
             return true;
-        case "luckyblock":
+        case 8:
             tiles.push_back(new LuckyBlock(Elements::MIDDLE_LAYER, location,true, new Coin(Elements::NONE, new Point(0,0),70,80,0,true)));
             return true;
-        case "hill1":
+        case 9:
             tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,2,8));
             return true;
-        case "hill2":
+        case 10:
             tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,1,8));
             return true;
-        case "brick":
+        case 11:
             tiles.push_back(new Bricks(Elements::MIDDLE_LAYER, location,true,true));
             return true;
-        case "firehammerbro":
+        case 12:
             ents.push_back(new HammerBro(Elements::MIDDLE_LAYER, location,60,98,-1,true,3));
             return true;
-        case "pipe":
+        case 13:
             tiles.push_back(new Pipes(Elements::MIDDLE_LAYER, location,true,4));
             return true;
-        case "cloud1":
+        case 14:
             tiles.push_back(new Clouds(Elements::BACK_LAYER, location, false ,1));
             return true;
-        case "bg":
+        case 15:
             tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,0,0,0));
             return true;
-        case  "bp":
+        case 16:
             tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,2,0,0));
             return true;
-        case  "bb":
+        case 17:
             tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,1,0,0));
             return true;
-        case  "bw":
+        case 18:
             tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,3,0,0));
             return true;
-        case  "shrub":
+        case 19:
             tiles.push_back(new Shrub(Elements::BACK_LAYER,location,false));
             return true;
-        case "clip":
+        case 20:
             tiles.push_back(new Clip(Elements::FRONT_LAYER, location,0,1));
             return true;
-        case "trigger":
+        case 21:
             String command = element.substr(element.find(" ")+1, element.find_last_of(" "));
             int activations = stoi(element.substr(element.find_last_of(" ")+1));
             tiles.push_back(new Trigger(Elements::FRONT_LAYER, location, 0,1, command, activations));
@@ -451,12 +457,12 @@ void Manager::collision() {
                         if(mario->getHitBox().intersects(ent->getHitBox())){
                             if(side==1||side==4){
                                 switch (mario->getPower()){
-                                    case mario->SMALL: mario->setDead(true);
+                                    case Player::SMALL: mario->setDead(true);
                                         Main.game.getBgmmario().getMusic().stop();
                                         SFX.down1.setFramePosition(0);
                                         SFX.down1.start();
                                         break;
-                                    case mario->BIG: mario->setPower(mario->SMALL);
+                                    case Player::BIG: mario->setPower(mario->SMALL);
                                         SFX.pipe.setFramePosition(0);
                                         SFX.pipe.start();
                                         break;
