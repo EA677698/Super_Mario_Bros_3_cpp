@@ -2,6 +2,7 @@
 // Created by Erick on 2/21/2021.
 //
 #include <string>
+#include "../Elements/Entities/Entity.h"
 
 using namespace std;
 string toLower(string input){

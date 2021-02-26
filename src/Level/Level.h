@@ -12,13 +12,11 @@
 class Level : public Elements{
 
 public:
+    enum Background{AQUA_BACKGROUND,BLUE_BACKGROUND,PINK_BACKGROUND,BLACK_BACKGROUND,ICE_BACKGROUND,CARAMEL_BACKGROUND,PORTAGE_BACKGROUND};\
+    Background background;
+    string bgm;
+    Level(Background background, string BGM);
 
-    enum Background{AQUA_BACKGROUND,BLUE_BACKGROUND,PINK_BACKGROUND,BLACK_BACKGROUND,ICE_BACKGROUND,CARAMEL_BACKGROUND,PORTAGE_BACKGROUND};
-    Level(Background background);
-    Background getBackground();
-    //Sprite getBackgroundSprite();
-    void changeBGM();
-    void setBackground(Background background);
 
 
 

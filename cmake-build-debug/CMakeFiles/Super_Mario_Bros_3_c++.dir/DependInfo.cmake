@@ -30,7 +30,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Elements/Tiles/WoodenBlock.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/FileManager/Loader.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/FileManager/Saver.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj"
-  "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Level/Background.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Level/Level.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Global.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj"
   "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Main.cpp" "C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/cmake-build-debug/CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj"

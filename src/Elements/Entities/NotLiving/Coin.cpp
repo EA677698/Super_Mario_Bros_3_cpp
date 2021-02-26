@@ -4,9 +4,9 @@
 
 #include "Coin.h"
 
-Coin::Coin(Elements::Layer layer, Point *coordinates, int width, int height, int direction, bool hasCollision)
-        : NonLiving(layer, coordinates, width, height, direction, hasCollision) {
-
+Coin::Coin(Elements::Layer layer, Point *coordinates, int width, int height, int direction, bool hasCollision, Global &global)
+        : NonLiving(layer, *coordinates, width, height, direction, hasCollision) {
+    Coin::global = &global;
 }
 
 Coin::Coin(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, int direction,
@@ -24,11 +24,10 @@ Coin::Coin(Elements::Layer layer, Point coordinates, int width, int height, int 
 }
 
 void Coin::executeUponTouch(Player player) {
-    Global.money++;
-    SFX.coin.setFramePosition(0);
-    SFX.coin.start();
+    global->money++;
+    global->playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\coin.wav");
     removeFromLayer();
-    Main.game.getManager().getEnts().remove(this);
+    global->manager.getEnts().remove(this);
 }
 
 void Coin::death() {

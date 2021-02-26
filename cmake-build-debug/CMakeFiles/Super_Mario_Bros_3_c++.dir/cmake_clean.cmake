@@ -25,7 +25,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Elements/Tiles/WoodenBlock.cpp.obj"
   "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Loader.cpp.obj"
   "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.obj"
-  "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj"
   "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Level.cpp.obj"
   "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Global.cpp.obj"
   "CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Main/Main.cpp.obj"

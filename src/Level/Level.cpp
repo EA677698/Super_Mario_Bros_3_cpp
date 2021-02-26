@@ -4,17 +4,11 @@
 
 #include "Level.h"
 
-Level::Level(Level::Background background) : Elements(NONE, Point(0,0)){
-
+Level::Level(Level::Background background, string BGM) : Elements(NONE, Point(0,0)){
+    Level::background = background;
+    bgm = BGM;
 }
 
-Level::Background Level::getBackground() {
-    return Level::BLUE_BACKGROUND;
-}
-
-void Level::setBackground(Background background) {
-
-}
 
 Level::Background string_to_background(string input) {
     int ret = string_match(input,{"AQUA_BACKGROUND","BLUE_BACKGROUND","PINK_BACKGROUND","BLACK_BACKGROUND","ICE_BACKGROUND",

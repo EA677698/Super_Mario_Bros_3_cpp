@@ -22,7 +22,7 @@ public:
 
     Tile(Layer layer, Point location, bool collision);
 
-    void tick();
+    virtual void tick();
 
     void callingException();
 

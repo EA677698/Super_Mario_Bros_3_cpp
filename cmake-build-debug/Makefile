@@ -58,10 +58,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2020.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = C:\Users\Erick\Desktop\Super_Mario_Bros_3_c++\cmake-build-deb
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2020.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -844,33 +844,6 @@ src/FileManager/Saver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/FileManager/Saver.cpp.s
 .PHONY : src/FileManager/Saver.cpp.s
 
-src/Level/Background.obj: src/Level/Background.cpp.obj
-
-.PHONY : src/Level/Background.obj
-
-# target to build an object file
-src/Level/Background.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.obj
-.PHONY : src/Level/Background.cpp.obj
-
-src/Level/Background.i: src/Level/Background.cpp.i
-
-.PHONY : src/Level/Background.i
-
-# target to preprocess a source file
-src/Level/Background.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.i
-.PHONY : src/Level/Background.cpp.i
-
-src/Level/Background.s: src/Level/Background.cpp.s
-
-.PHONY : src/Level/Background.s
-
-# target to generate assembly for a file
-src/Level/Background.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Super_Mario_Bros_3_c++.dir\build.make CMakeFiles/Super_Mario_Bros_3_c++.dir/src/Level/Background.cpp.s
-.PHONY : src/Level/Background.cpp.s
-
 src/Level/Level.obj: src/Level/Level.cpp.obj
 
 .PHONY : src/Level/Level.obj
@@ -1255,9 +1228,6 @@ help:
 	@echo ... src/FileManager/Saver.obj
 	@echo ... src/FileManager/Saver.i
 	@echo ... src/FileManager/Saver.s
-	@echo ... src/Level/Background.obj
-	@echo ... src/Level/Background.i
-	@echo ... src/Level/Background.s
 	@echo ... src/Level/Level.obj
 	@echo ... src/Level/Level.i
 	@echo ... src/Level/Level.s

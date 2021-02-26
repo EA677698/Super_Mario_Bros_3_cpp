@@ -117,7 +117,7 @@ public:
 
     virtual void death();
 
-    virtual Sprite getSprite();
+    virtual sf::Sprite getSprite();
 
     string to_string();
 

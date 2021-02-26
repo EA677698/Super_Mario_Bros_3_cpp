@@ -1,16 +1,11 @@
 //
 // Created by Erick on 2/20/2021.
 //
+#include "Global.h"
 
-int score, money, lives, time;
-enum Card{STAR_CARD,FLOWER_CARD,MUSHROOM_CARD,EMPTY_CARD};
-Card cards[3];
-bool active[7];
-
-void HUDCheck(){
-    if(Main.game.getManager().getPlayer()!=null){
-        active = new boolean[7];
-        int temp = (int)Main.game.getManager().getPlayer().getXVelocity();
+void Global::HUDCheck(){
+    if(manager.getPlayer()!= nullptr){
+        int temp = (int)manager.getPlayer()->getXVelocity();
         for(int i = 1; temp>4; i++){
             active[i] = true;
             temp--;
@@ -29,19 +24,34 @@ void HUDCheck(){
     }
 }
 
-void addCard(Cards card){
+void Global::addCard(Cards card){
     int totals = 0;
-    for(Cards selected : cards){
-        if(selected!=null){
+    Cards * selected;
+    for(int i = 0; i<3; i++){
+        selected = &cards[i];
+        if(selected!= nullptr){
             totals++;
         } else {
-            selected = card;
+            selected = &card;
             return;
         }
     }
     if(totals==3){
         lives++;
     }
+}
+
+void Global::scaling(){
+    if(!(scaleX == (windowSize.width/1980.0)&&scaleY==(windowSize.height/1080.0))){
+        scaleX = (windowSize.width/1920.0);
+        scaleY = (windowSize.height/1080.0);
+    }
+}
+
+void Global::playSound(string path) {
+    buffer.loadFromFile(path);
+    sound.setBuffer(buffer);
+    sound.play();
 }
 
 //void getCards(){

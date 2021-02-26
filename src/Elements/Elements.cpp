@@ -86,3 +86,7 @@ void Elements::addX(int x) {
 void Elements::addY(int y) {
     Elements::location.y += y;
 }
+
+void Elements::setLocation(const int x, const int y) {
+    Elements::location.setLocation(x,y);
+}

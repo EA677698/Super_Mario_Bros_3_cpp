@@ -5,13 +5,16 @@
 #ifndef SUPER_MARIO_BROS_3_C_CONTROLS_H
 #define SUPER_MARIO_BROS_3_C_CONTROLS_H
 #include <SFML/Window/Keyboard.hpp>
+#include "../Main/Global.h"
+#include "Settings.cpp"
 
 using namespace sf;
 
 Clock timer;
-bool JUMP,LEFT,RIGHT,DOWN,UP,CONTROL, ALT,SHIFT,SLASH,SELECT,SIX,CONSOLE,DELETE;
+bool JUMP,LEFT,RIGHT,DOWN,UP,CONTROL,ALT,SHIFT,SLASH,SELECT,SIX,CONSOLE,DELETE;
+HitBox mouseHitBox(0,0,30,30);
 
-void updateControls(){
+void updateControls(Window &window, Global &global){
     DELETE = Keyboard::isKeyPressed(Keyboard::BackSpace);
     JUMP = Keyboard::isKeyPressed(Keyboard::C);
     UP = Keyboard::isKeyPressed(Keyboard::Up);
@@ -29,6 +32,16 @@ void updateControls(){
             CONSOLE = !CONSOLE;
         }
         timer.restart();
+    }
+    mouseHitBox.setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
+    if(Mouse::isButtonPressed(Mouse::Left)&&debug){
+        global.manager.select();
+        if(global.manager.getSelectedEntity() != nullptr){
+            global.manager.getSelectedEntity()->setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
+        }
+        if(global.manager.getSelectedTile() != nullptr){
+            global.manager.getSelectedTile()->setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
+        }
     }
 }
 

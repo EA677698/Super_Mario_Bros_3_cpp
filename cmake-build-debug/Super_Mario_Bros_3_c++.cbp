@@ -240,9 +240,6 @@
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/FileManager/Saver.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
-		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Level/Background.cpp">
-			<Option target="Super_Mario_Bros_3_c++"/>
-		</Unit>
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Level/Level.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
@@ -252,10 +249,10 @@
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Global.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
-		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Main.cpp">
+		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Global.h">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
-		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Window.h">
+		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Main/Main.cpp">
 			<Option target="Super_Mario_Bros_3_c++"/>
 		</Unit>
 		<Unit filename="C:/Users/Erick/Desktop/Super_Mario_Bros_3_c++/src/Settings/Controls.h">

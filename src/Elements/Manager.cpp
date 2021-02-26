@@ -12,7 +12,6 @@
 #include "Tiles/WoodenBlock.h"
 #include "Tiles/Floor.h"
 #include "Tiles/Interactables/LuckyBlock.h"
-#include "Entities/NotLiving/Coin.h"
 #include "Entities/NotLiving/GreenMushroom.h"
 #include "Entities/NotLiving/RedMushroom.h"
 #include "Entities/Enemies/KoopaTroopa.h"
@@ -42,22 +41,21 @@ bool Manager::commandInput(string input) {
                 return freezeElements(end);
             case 5:
                 try {
-                    level->setBackground(string_to_background(toUpper(end)));
+                    level->background = string_to_background(toUpper(end));
                 } catch (int e) {
                     cout<<"An error has occured: "<<e<<endl;
                 }
                 return true;
             case 6:
-                Saver.world = stoi(end.substr(0,end.find(" ")));
-                Saver.level = stoi(end.substr(end.find(" ")+1));
-                Saver.createLevel();
+//                Saver.world = stoi(end.substr(0,end.find(" ")));
+//                Saver.level = stoi(end.substr(end.find(" ")+1));
+//                Saver.createLevel();
                 return true;
             case 7:
-                //Loader.loadLevel(end);
-                Loader.loadLevel(end);
+//                Loader.loadLevel(end);
                 return true;
             case 8:
-                level->changeMusic(BGM.valueOf(toUpper(end)));
+                level->bgm = toUpper(end);
                 return true;
         }
     } else {
@@ -76,12 +74,12 @@ bool Manager::commandInput(string input) {
                 crt = !crt;
                 return true;
             case 4:
-                System.exit(0);
+                exit(0);
                 return true;
             case 5:
                 ents.clear();
                 tiles.clear();
-                level = new Level(Level::AQUA_BACKGROUND, BGM.GRASS_LAND);
+                level = new Level(Level::AQUA_BACKGROUND, "C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\BGM\\grassland.wav");
                 return true;
             case 6:
                 muted = !muted;
@@ -95,13 +93,13 @@ bool Manager::addStats(string stat) {
     int ret = string_match(stat.substr(0,stat.find(" ")), {"score","money","lives"},3);
     switch (ret){
         case 0:
-            score += end;
+            Global::score += end;
             return true;
         case 1:
-            money += end;
+            Global::money += end;
             return true;
         case 2:
-            lives += end;
+            Global::lives += end;
             return true;
     }
     return false;
@@ -170,23 +168,23 @@ void Manager::resetTiles() {
 
 void Manager::select() {
     for(Entity *ent: ents){
-        if(ent->getHitBox().intersects(Controls.mouseHitBox)){
-            if(selectedEntity!=NULL){
+        if(ent->getHitBox().intersects(mouseHitBox)){
+            if(selectedEntity!= nullptr){
                 selectedEntity->setDirection(previousDirection);
                 selectedEntity->setSelected(false);
             }
             selectedEntity = ent;
             selectedEntity->setSelected(true);
-            selectedTile = NULL;
+            selectedTile = nullptr;
             previousDirection = selectedEntity->getDirection();
             selectedEntity->setDirection(0);
             return;
         }
     }
     for(Tile *tile: tiles){
-        if(tile->getHitBox().intersects(Controls.mouseHitBox)){
+        if(tile->getHitBox().intersects(mouseHitBox)){
             selectedTile = tile;
-            if(selectedEntity!=NULL){
+            if(selectedEntity!= nullptr){
                 selectedEntity->setDirection(previousDirection);
                 selectedEntity->setSelected(false);
                 return;
@@ -196,7 +194,7 @@ void Manager::select() {
 }
 
 void Manager::freeEntity() {
-    if(selectedEntity!=NULL){
+    if(selectedEntity!= nullptr){
         elapsed = timer1.getElapsedTime();
         if(elapsed.asMilliseconds()>100){
             if(SIX&&selectedEntity->getDirection()==0){
@@ -240,10 +238,10 @@ void Manager::tick() {
 }
 
 void Manager::marioCheck() {
-    if(mario!=NULL){
+    if(mario!= nullptr){
         mario->removeFromLayer();
         vecRemove(mario,ents);
-        mario = NULL;
+        mario = nullptr;
     }
 }
 
@@ -260,7 +258,7 @@ bool Manager::removeElement(string element) {
 
 bool Manager::spawnElement(string element) {
     String temp;
-    Point location(windowSize.width/2,windowSize.height/2);
+    Point location(Global::windowSize.width/2,Global::windowSize.height/2);
     if(contains(element," ")){
         temp = element.substr(0, element.find(" "));
     } else {
@@ -286,7 +284,7 @@ bool Manager::spawnElement(string element) {
             ents.push_back(new GreenMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true));
             return true;
         case 5:
-            ents.push_back(new Coin(Elements::MIDDLE_LAYER, location,60,60,0,true));
+            ents.push_back(new Coin(Elements::MIDDLE_LAYER, &location,60,60,0,true,global));
             return true;
         case 6:
             tiles.push_back(new Floor(Elements::MIDDLE_LAYER, location,true,8,1));
@@ -295,7 +293,7 @@ bool Manager::spawnElement(string element) {
             tiles.push_back(new WoodenBlock(Elements::MIDDLE_LAYER, location,true));
             return true;
         case 8:
-            tiles.push_back(new LuckyBlock(Elements::MIDDLE_LAYER, location,true, new Coin(Elements::NONE, new Point(0,0),70,80,0,true)));
+            tiles.push_back(new LuckyBlock(Elements::MIDDLE_LAYER, location,true, new Coin(Elements::NONE, new Point(0,0),70,80,0,true,global)));
             return true;
         case 9:
             tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,2,8));
@@ -343,21 +341,21 @@ bool Manager::spawnElement(string element) {
 }
 
 void Manager::deleteSelected() {
-    if(selectedEntity!=NULL){
+    if(selectedEntity!= nullptr){
         if(DELETE){
             if(selectedEntity==mario){
                 marioCheck();
             }
             selectedEntity->removeFromLayer();
             vecRemove(selectedEntity,ents);
-            selectedEntity = NULL;
+            selectedEntity = nullptr;
         }
     }
-    if(selectedTile!=NULL){
+    if(selectedTile!= nullptr){
         if(DELETE){
             selectedTile->removeFromLayer();
             vecRemove(selectedTile,tiles);
-            selectedTile = NULL;
+            selectedTile = nullptr;
         }
     }
 }
@@ -385,18 +383,18 @@ void Manager::sideScroll() {
                     tile->addX(60);
                 }
             }
-            debugScroll.restart()
+            debugScroll.restart();
         }
         return;
     }
-    if(mario == NULL){
+    if(mario == nullptr){
         for(Entity *ent: ents){
             if(Player* ent = dynamic_cast<Player*>(ent)){
                 mario = ent;
             }
         }
     }
-    if(mario == NULL){
+    if(mario == nullptr){
         return;
     }
     if(!mario->isDead()){
@@ -448,7 +446,7 @@ void Manager::sideScroll() {
 void Manager::collision() {
     for(Entity *ent : ents){
         if(ent->isCollision()&&!ent->isUnloaded()){
-            if(mario!=NULL){
+            if(mario!= nullptr){
                 if(Enemy* entity = dynamic_cast<Enemy*>(ent)){
                     elapsed = hitTimer.getElapsedTime();
                     if(elapsed.asMilliseconds()>2000){
@@ -458,13 +456,11 @@ void Manager::collision() {
                             if(side==1||side==4){
                                 switch (mario->getPower()){
                                     case Player::SMALL: mario->setDead(true);
-                                        Main.game.getBgmmario().getMusic().stop();
-                                        SFX.down1.setFramePosition(0);
-                                        SFX.down1.start();
+                                        global.player.stop();
+                                        global.playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\1down.wav");
                                         break;
                                     case Player::BIG: mario->setPower(mario->SMALL);
-                                        SFX.pipe.setFramePosition(0);
-                                        SFX.pipe.start();
+                                        global.playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\pipe.wav");
                                         break;
                                     default: mario->setPower(mario->BIG);
                                 }
@@ -503,10 +499,17 @@ void Manager::collision() {
                     if(tile->getHitBox().intersects(ent->getHitBox())){
                         //If an entity hits something from his sides while moving
                         int side = tile->getHitBox().outcode(ent->getHitBox().getCenterX(),ent->getHitBox().getCenterY());
-                        if(!(BigBlocks* ent = dynamic_cast<BigBlocks*>(tile))&&(side==1||side==4||side==9||side==12)){
-                            if(ent->isFacingTile(tile)){
+                        if(BigBlocks* temp = dynamic_cast<BigBlocks*>(tile)){
+                            if(side==8||side==9||side==12) {
                                 if(Player* ent = dynamic_cast<Player*>(ent)){
-                                    if(ent->getDirection()==1){
+                                    ent->setYVelocity(0);
+                                    ent->setHasGravity(true);
+                                }
+                            }
+                        } else if(side==1||side==4||side==9||side==12){
+                            if (ent->isFacingTile(tile)) {
+                                if (Player *ent = dynamic_cast<Player *>(ent)) {
+                                    if (ent->getDirection() == 1) {
                                         mario->setXVelocity(0);
                                         RIGHT = false;
                                     } else {
@@ -514,14 +517,9 @@ void Manager::collision() {
                                         LEFT = false;
                                     }
                                 } else {
-                                    ent->setDirection(ent->getDirection()*-1);
+                                    ent->setDirection(ent->getDirection() * -1);
                                 }
                             } //If Mario Hits something above him while jumping
-                        } else if(side==8||side==9||side==12){
-                            if(Player* ent = dynamic_cast<Player*>(ent)){
-                                ent->setYVelocity(0);
-                                ent->setHasGravity(true);
-                            }
                         }
                     }
                 }
@@ -580,4 +578,12 @@ const vector<Entity *> &Manager::getEnts() const {
 
 void Manager::setPreviousDirection(int previousDirection) {
     Manager::previousDirection = previousDirection;
+}
+
+void Manager::setPlayer(Player &mario) {
+    Manager::mario = &mario;
+}
+
+Player* Manager::getPlayer() {
+    return mario;
 }

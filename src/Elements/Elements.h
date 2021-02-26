@@ -26,6 +26,7 @@ public:
     void setUnloaded(bool isLoaded);
     Point getLocation();
     void setLocation(const Point &location);
+    void setLocation(const int x, const int y);
     void addX(int x);
     void addY(int y);
 

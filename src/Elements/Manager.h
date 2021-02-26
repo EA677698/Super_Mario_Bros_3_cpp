@@ -70,6 +70,8 @@ public:
     void deleteSelected();
     void sideScroll();
     void collision();
+    Player* getPlayer();
+    void setPlayer(Player &mario);
 };
 
 

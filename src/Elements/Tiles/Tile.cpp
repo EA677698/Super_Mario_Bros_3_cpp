@@ -58,11 +58,11 @@ Tile::Tile(Elements::Layer layer, Point location, bool collision) : Elements(lay
     hitBox = HitBox(location.x, location.y, width, height);
 }
 
-void Tile::tick() {
-
-}
-
 void Tile::callingException() {
     hitBox.setLocation(getLocation().x,getLocation().y);
     hitBox.setSize(width,height);
+}
+
+void Tile::tick() {
+
 }

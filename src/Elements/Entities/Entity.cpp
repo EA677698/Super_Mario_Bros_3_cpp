@@ -232,7 +232,7 @@ void Entity::death() {
 
 }
 
-Sprite Entity::getSprite() {
+sf::Sprite Entity::getSprite() {
     return Sprite();
 }
 
