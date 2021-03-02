@@ -8,7 +8,7 @@ Tool::Tool(Elements::Layer layer, Point location, bool collision, int middleBloc
     Tool::layers = layers;
     Tool::middleBlocks = middleBlocks;
     setWidth(60+(middleBlocks*60));
-    setHitBox(HitBox(getWidth(), getHeight(),0,0));
+    hitBox.setBounds(Tile::width, Tile::height, 0,0);
 }
 
 void Tool::tick() {

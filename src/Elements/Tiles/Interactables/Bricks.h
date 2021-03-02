@@ -6,6 +6,8 @@
 #define SUPER_MARIO_BROS_3_C_BRICKS_H
 #include "Interactable.h"
 #include "../../Entities/Entity.h"
+#include "../../../Main/Main.cpp"
+#include "../../../Tools/GeneralTools.cpp"
 
 class Bricks : public Interactable{
 

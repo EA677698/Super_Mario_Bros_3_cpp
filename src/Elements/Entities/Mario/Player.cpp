@@ -206,6 +206,7 @@ Sprite Player::getSprite() {
 }
 
 void Player::death() {
+    Entity::death();
     setSpriteIndex(9);
     elapsed = deathTimer.getElapsedTime();
     if(elapsed.asMilliseconds()>10){

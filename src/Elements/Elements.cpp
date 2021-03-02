@@ -4,7 +4,7 @@
 
 #include "Elements.h"
 
-Elements::Elements(Layer layer, const Point &location) {
+Elements::Elements(Layer layer, Point &location) {
     Elements::layer = layer;
     Elements::location = location;
     switch (layer){
@@ -75,7 +75,7 @@ Point Elements::getLocation() {
     return location;
 }
 
-void Elements::setLocation(const Point &location) {
+void Elements::setLocation(Point &location) {
     Elements::location = location;
 }
 

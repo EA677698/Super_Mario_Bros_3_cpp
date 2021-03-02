@@ -9,22 +9,22 @@ Fireball::Fireball(Elements::Layer layer, Point coordinates, int width, int heig
 
 }
 
-void Fireball::executeUponTouch(Player player) {
-    if(&player!=NULL){
+void Fireball::executeUponTouch(Player mario) {
+    if(&mario != NULL){
         elapsed = hitTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>2000){
-            if(player.getHitBox().intersects(getHitBox())){
-                switch (player.getPower()){
-                    case player.SMALL: player.setDead(true);
+            if(mario.getHitBox().intersects(getHitBox())){
+                switch (mario.getPower()){
+                    case mario.SMALL: mario.setDead(true);
                         Main.game.getBgmPlayer().getMusic().stop();
                         SFX.down1.setFramePosition(0);
                         SFX.down1.start();
                         break;
-                    case player.BIG: player.setPower(player.SMALL);
+                    case mario.BIG: mario.setPower(mario.SMALL);
                         SFX.pipe.setFramePosition(0);
                         SFX.pipe.start();
                         break;
-                    default: player.setPower(player.BIG);
+                    default: mario.setPower(mario.BIG);
                 }
                 hitTimer.restart();
             }

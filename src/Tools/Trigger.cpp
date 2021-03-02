@@ -13,13 +13,13 @@ Trigger::Trigger(Elements::Layer layer, Point location, int middleBlocks, int la
 void Trigger::tick() {
     Tool::tick();
     if(MAX_ACTIVATIONS!=0&&activations>=MAX_ACTIVATIONS){
-        Main.game.getManager().getTiles().remove(this);
+        global.manager.getTiles().remove(this);
     }
     elapsed = timer.getElapsedTime();
     if(elapsed.asMilliseconds()>80){
-        if(Main.game.getManager().getPlayer()!=NULL&&Main.game.getManager().getPlayer().getHitBox().intersects(getHitBox())){
+        if(global.manager.getPlayer()!=NULL&&global.manager.getPlayer()->getHitBox().intersects(getHitBox())){
             if(!stillInContact){
-                Main.game.getManager().commandInput(tolower(command));
+                global.manager.commandInput(toLower(command));
                 activations++;
                 stillInContact = true;
             }
@@ -31,5 +31,5 @@ void Trigger::tick() {
 }
 
 string Trigger::to_string() {
-    return string;
+    return "";
 }

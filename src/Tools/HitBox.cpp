@@ -138,7 +138,7 @@ int HitBox::outcode(double x, double y) const {
     return out;
 }
 
-bool HitBox::intersects(HitBox &hitBox) const {
+bool HitBox::intersects(const HitBox &hitBox) const {
     int tw = HitBox::width;
     int th = HitBox::height;
     int rw = hitBox.getWidth();
@@ -200,6 +200,20 @@ int HitBox::getMinY() const {
 
 int HitBox::getMaxY() const {
     return y+height;
+}
+
+void HitBox::setBounds(int x, int y, int width, int height) {
+    HitBox::x = x;
+    HitBox::y = y;
+    HitBox::width = width;
+    HitBox::height = height;
+}
+
+void HitBox::setBounds(HitBox &hitBox) {
+    x = hitBox.x;
+    y = hitBox.y;
+    width = hitBox.width;
+    height = hitBox.height;
 }
 
 

@@ -38,9 +38,9 @@ public:
 
     void setCollision(bool collision);
 
-    const HitBox getHitBox() const;
+    HitBox getHitBox();
 
-    void setHitBox(const HitBox &hitbox);
+    void setHitBox(HitBox &hitbox);
 
     const string &getTileName() const;
 

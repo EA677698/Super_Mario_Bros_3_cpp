@@ -15,7 +15,7 @@ Pipes::Pipes(Elements::Layer layer, Point location, bool collision, int blocks) 
 void Pipes::tick() {
     Interactable::tick();
     executeOnAction();
-    if(Main.game.getManager().getSelectedTile()==this){
+    if(global.manager.getSelectedTile()==this){
         changeHeight();
     }
 }
@@ -26,10 +26,10 @@ void Pipes::connectToPipe(Pipes pipe) {
 
 void Pipes::executeOnAction() {
     if(connectionPipe!=NULL){
-        if(Main.game.getManager().getPlayer().getHitBox().intersects(this->getHitBox())){
-            if(Main.game.getManager().getPlayer().getLocation().y<this->getLocation().y){
+        if(global.manager.getPlayer()->getHitBox().intersects(this->getHitBox())){
+            if(global.manager.getPlayer()->getLocation().y<this->getLocation().y){
                 if(DOWN){
-                    Main.game.getManager().getPlayer().setLocation(new Point(connectionPipe.getLocation().x,connectionPipe.getLocation().y));
+                    global.manager.getPlayer()->setLocation(connectionPipe->getLocation().x,connectionPipe->getLocation().y);
                 }
             }
         }
@@ -37,10 +37,10 @@ void Pipes::executeOnAction() {
 }
 
 Sprite Pipes::getSprites() {
-    if (!Main.game.getManager().getTileLayouts().containsKey(getUUID())) {
+    if (!global.manager.getTileLayouts().containsKey(getUUID())) {
         calculateTileLayers();
     }
-    return Main.game.getManager().getTileLayouts().get(getUUID());
+    return global.manager.getTileLayouts().get(getUUID());
 }
 
 void Pipes::calculateTileLayers() {
@@ -51,7 +51,7 @@ void Pipes::calculateTileLayers() {
         tile[i][0] = Main.game.getSpritesLoader().getPipes()[2];
         tile[i][1] = Main.game.getSpritesLoader().getPipes()[3];
     }
-    Main.game.getManager().getTileLayouts().put(getUUID(),tile);
+    global.manager.getTileLayouts().put(getUUID(),tile);
 }
 
 void Pipes::changeHeight() {

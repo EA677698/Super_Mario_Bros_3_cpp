@@ -5,6 +5,8 @@
 #ifndef SUPER_MARIO_BROS_3_C_TRIGGER_H
 #define SUPER_MARIO_BROS_3_C_TRIGGER_H
 #include "Tool.h"
+#include "../Tools/GeneralTools.cpp"
+#include "../Main/Main.cpp"
 
 class Trigger : public Tool {
 

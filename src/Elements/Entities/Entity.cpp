@@ -129,52 +129,52 @@ void Entity::setHitBox(HitBox hitBox) {
 }
 
 Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, bool hasCollision): Elements(layer, coordinates) {
-    location = Point((int)(coordinates.x*scaleX),(int)(coordinates.y*scaleY));
-    Entity::width = (int)(width*scaleX);
-    Entity::height = (int)(height*scaleY);
+    location.setLocation((int)(coordinates.x*global.scaleX),(int)(coordinates.y*global.scaleY));
+    Entity::width = (int)(width*global.scaleX);
+    Entity::height = (int)(height*global.scaleY);
     life = 1;
     collision = hasCollision;
     hasGravity = true;
     damage = 1;
     XVelocity = 1.0;
     gravity = 1;
-    hitBox = HitBox(location, Entity::width, Entity::height);
+    hitBox.setBounds(location.x, location.y, Entity::width, Entity::height);
 }
 
 Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity,
                bool hasCollision): Elements(layer, coordinates) {
-    location = Point((int)(coordinates.x*scaleX),(int)(coordinates.y*scaleY));
-    Entity::width = (int)(width*scaleX);
-    Entity::height = (int)(height*scaleY);
+    location.setLocation((int)(coordinates.x*global.scaleX),(int)(coordinates.y*global.scaleY));
+    Entity::width = (int)(width*global.scaleX);
+    Entity::height = (int)(height*global.scaleY);
     life = 1;
     collision = hasCollision;
     hasGravity = true;
     damage = 1;
     XVelocity = 1.0;
     gravity = 1;
-    hitBox = HitBox(location, Entity::width, Entity::height);
+    hitBox.setBounds(location.x, location.y, Entity::width, Entity::height);
 }
 
 Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, double XVelocity,
                double gravity, bool hasGravity, bool hasCollision): Elements(layer, coordinates) {
-    location = Point((int)(coordinates.x*scaleX),(int)(coordinates.y*scaleY));
-    Entity::width = (int)(width*scaleX);
-    Entity::height = (int)(height*scaleY);
+    location.setLocation((int)(coordinates.x*global.scaleX),(int)(coordinates.y*global.scaleY));
+    Entity::width = (int)(width*global.scaleX);
+    Entity::height = (int)(height*global.scaleY);
     life = 1;
     collision = hasCollision;
     hasGravity = true;
     damage = 1;
     XVelocity = 1.0;
     gravity = 1;
-    hitBox = HitBox(location, Entity::width, Entity::height);
+    hitBox.setBounds(location.x, location.y, Entity::width, Entity::height);
 }
 
 void Entity::tick() {
     touchingGround = 0;
-    for(Tile tile: Main.game.getManager().getTiles()){
-        if(tile.isCollision()){
-            int side = tile.getHitBox().outcode(hitBox.getCenterX(),hitBox.getCenterY());
-            if(hitBox.intersects(tile.getHitBox())&&(side==2||side==3||side==6)){
+    for(Tile *tile: global.manager.getTiles()){
+        if(tile->isCollision()){
+            int side = tile->getHitBox().outcode(hitBox.getCenterX(),hitBox.getCenterY());
+            if(hitBox.intersects(tile->getHitBox())&&(side==2||side==3||side==6)){
                 touchingGround++;
             }
         }

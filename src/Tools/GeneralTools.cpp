@@ -37,7 +37,7 @@ bool contains(string input, string keyword){
 
 }
 
-int string_match(string input, char list[][], int size){
+int string_match(string input, string list[], int size){
     for(int i = 0; i<size; i++){
         if(input==list[i]){
             return i;

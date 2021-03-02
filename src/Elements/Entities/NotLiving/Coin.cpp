@@ -1,7 +1,7 @@
 //
 // Created by Erick on 2/20/2021.
 //
-
+#include "../../../Tools/GeneralTools.cpp"
 #include "Coin.h"
 
 Coin::Coin(Elements::Layer layer, Point *coordinates, int width, int height, int direction, bool hasCollision, Global &global)
@@ -27,7 +27,7 @@ void Coin::executeUponTouch(Player player) {
     global->money++;
     global->playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\coin.wav");
     removeFromLayer();
-    global->manager.getEnts().remove(this);
+    vecRemove(global->manager.getEnts(),this);
 }
 
 void Coin::death() {

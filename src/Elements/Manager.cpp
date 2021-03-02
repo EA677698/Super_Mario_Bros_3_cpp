@@ -29,7 +29,8 @@ Manager::Manager() {}
 bool Manager::commandInput(string input) {
     if(contains(input," ")) {
         string end = input.substr(input.find(" ") + 1);
-        int ret = string_match(input.substr(0, input.find(" ")-1), {"spawn","remove","add","freeze","background","save","load","bgm"}, 8);
+        string commands[] = {"spawn","remove","add","freeze","background","save","load","bgm"};
+        int ret = string_match(input.substr(0, input.find(" ")-1), commands, 8);
         switch (ret) {
             case 1:
                 return spawnElement(end);
@@ -59,7 +60,8 @@ bool Manager::commandInput(string input) {
                 return true;
         }
     } else {
-        int ret = string_match(input, {"debug","fps","hitbox","crt","quit","unload","mute"},7);
+        string commands[] = {"debug","fps","hitbox","crt","quit","unload","mute"};
+        int ret = string_match(input, commands,7);
         switch (ret){
             case 0:
                 debug = !debug;
@@ -90,7 +92,8 @@ bool Manager::commandInput(string input) {
 
 bool Manager::addStats(string stat) {
     int end = stoi(stat.substr(stat.find(" ")-1));
-    int ret = string_match(stat.substr(0,stat.find(" ")), {"score","money","lives"},3);
+    string commands[] = {"score","money","lives"};
+    int ret = string_match(stat.substr(0,stat.find(" ")), commands, 3);
     switch (ret){
         case 0:
             Global::score += end;
@@ -106,7 +109,8 @@ bool Manager::addStats(string stat) {
 }
 
 bool Manager::freezeElements(string element) {
-    int ret = string_match(element,{"all","goomba","enemies","koopatroopa","fireball","hammerbro"},6);
+    string entities[] = {"all","goomba","enemies","koopatroopa","fireball","hammerbro"};
+    int ret = string_match(element,entities,6);
     switch (ret){
         case 0:
             for(Entity *entity: ents){
@@ -264,8 +268,9 @@ bool Manager::spawnElement(string element) {
     } else {
         temp = element;
     }
-    int ret = string_match(temp, {"mario","goomba","koopatroopa","redmushroom","greenmushroom","coin","floor","woodenblock","luckyblock"
-    ,"hill1","hill2","brick","firehammerbro","pipe","cloud1","bg","bp","bb","bw","shrub","clip","trigger"},22);
+    string entities[] = {"mario","goomba","koopatroopa","redmushroom","greenmushroom","coin","floor","woodenblock","luckyblock"
+            ,"hill1","hill2","brick","firehammerbro","pipe","cloud1","bg","bp","bb","bw","shrub","clip","trigger"};
+    int ret = string_match(temp, entities ,22);
     switch (ret){
         case 0:
             marioCheck();

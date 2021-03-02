@@ -5,7 +5,7 @@
 #include "LuckyBlock.h"
 #include "../../Entities/NotLiving/Coin.h"
 
-LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Coin *containedEntity) : Interactable(layer, location, collision) {
+LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Entity containedEntity) : Interactable(layer, location, collision) {
     this->containedEntity = containedEntity;
     setTileName("LuckyBlock");
 }
@@ -13,9 +13,9 @@ LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Co
 void LuckyBlock::tick() {
     Interactable::tick();
     if(!isActivated()){
-        if(Main.game.getManager().getPlayer()!=NULL) {
-            if (Main.game.getManager().getPlayer().getHitBox().intersects(getHitBox())) {
-                if(getHitBox().outcode(Main.game.getManager().getPlayer().getHitBox().getCenterX(),Main.game.getManager().getPlayer().getHitBox().getCenterY())==8){
+        if(global.manager.getPlayer()!=NULL) {
+            if (global.manager.getPlayer()->getHitBox().intersects(getHitBox())) {
+                if(getHitBox().outcode(global.manager.getPlayer().getHitBox().getCenterX(),global.manager.getPlayer().getHitBox().getCenterY())==8){
                     executeOnTouch();
                 }
             }
@@ -36,19 +36,19 @@ void LuckyBlock::tick() {
 void LuckyBlock::executeOnTouch() {
     setActivated(true);
     if(&containedEntity != NULL){
-        containedEntity.setLocation(Point(getLocation().x,getLocation().y));
-        Main.game.getManager().getEnts().add(containedEntity);
+        containedEntity.setLocation(getLocation().x,getLocation().y);
+        global.manager.getEnts().push_back(containedEntity);
         elapsed = executeTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>100){
             containedEntity.changeLayer(MIDDLE_LAYER);
             containedEntity.addY(-1);
-            executeTimer.restart()
+            executeTimer.restart();
         }
     }
 }
 
 string LuckyBlock::to_string() {
-    return std::__cxx11::string();
+    return "";
 }
 
 Sprite LuckyBlock::getSprite() {

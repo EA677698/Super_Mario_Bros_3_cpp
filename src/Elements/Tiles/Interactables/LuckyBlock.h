@@ -16,7 +16,7 @@ private:
     Time elapsed;
 
 public:
-    LuckyBlock(Layer layer, Point Location, bool collision, Coin *containedEntity);
+    LuckyBlock(Layer layer, Point Location, bool collision, Entity containedEntity);
     void tick();
     void executeOnTouch();
     string to_string();

@@ -13,13 +13,13 @@ int tpsCap = 100000;
 
 void tick(){
     if(!debug){
-        if(.getSelectedEntity()!=null){
-            Main.game.getManager().getSelectedEntity().setSelected(false);
-            Main.game.getManager().getSelectedEntity().setDirection(Main.game.getManager().getPreviousDirection());
-            Main.game.getManager().setSelectedEntity(null);
+        if(global.manager.getSelectedEntity()!= nullptr){
+            global.manager.getSelectedEntity()->setSelected(false);
+            global.manager.getSelectedEntity()->setDirection(global.manager.getPreviousDirection());
+            global.manager.setSelectedEntity(nullptr);
         }
-        if(Main.game.getManager().getSelectedTile()!=null){
-            Main.game.getManager().setSelectedTile(null);
+        if(global.manager.getSelectedTile()!= nullptr){
+            global.manager.setSelectedTile(nullptr);
         }
     }
 }

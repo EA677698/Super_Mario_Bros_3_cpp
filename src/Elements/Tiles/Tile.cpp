@@ -28,11 +28,11 @@ void Tile::setCollision(bool collision) {
     Tile::collision = collision;
 }
 
-const HitBox Tile::getHitBox() const {
+HitBox Tile::getHitBox() {
     return hitBox;
 }
 
-void Tile::setHitBox(const HitBox &hitbox) {
+void Tile::setHitBox(HitBox &hitbox) {
     Tile::hitBox = hitbox;
 }
 
@@ -55,7 +55,7 @@ void Tile::setBlocksPerLayer(int blocksPerLayer) {
 Tile::Tile(Elements::Layer layer, Point location, bool collision) : Elements(layer, location) {
     this->location = location;
     this->collision = collision;
-    hitBox = HitBox(location.x, location.y, width, height);
+    hitBox.setBounds(location.x,location.y,width,height);
 }
 
 void Tile::callingException() {

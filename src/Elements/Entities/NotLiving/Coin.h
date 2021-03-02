@@ -6,6 +6,7 @@
 #define SUPER_MARIO_BROS_3_C_COIN_H
 #include "NonLiving.h"
 #include "../../../Main/Main.cpp"
+#include "../../../Tools/GeneralTools.cpp"
 
 class Coin : public NonLiving {
 

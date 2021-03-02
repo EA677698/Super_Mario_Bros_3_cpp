@@ -46,7 +46,7 @@ public:
     void move(Point &point);
     bool contains(Point point, Dimension dimension);
     bool contains(int X, int Y, int W, int H);
-    bool intersects(HitBox &hitBox) const;
+    bool intersects(const HitBox &hitBox) const;
     string toString();
 
 

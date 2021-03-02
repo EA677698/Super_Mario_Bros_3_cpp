@@ -9,13 +9,13 @@ Floor::Floor(Elements::Layer layer, Point location, bool collision, int middleBl
     this->layers = layers;
     this->setTileName("Platform");
     this->setWidth(120+(middleBlocks*60));
-    setHitBox(HitBox(0, 0, getWidth(), getHeight()));
+    hitBox.setBounds(0,0,Tile::width,Tile::height);
     calculateTileLayers();
 }
 
 void Floor::tick() {
     Tile::tick();
-    if(Main.game.getManager().getSelectedTile()==this){
+    if(global.manager.getSelectedTile()==this){
         changeHeight();
         changeLength();
     }
@@ -71,5 +71,5 @@ void Floor::calculateTileLayers() {
             }
         }
     }
-    Main.game.getManager().getTileLayouts().put(getUUID(),tile);
+    global.manager.getTileLayouts().put(getUUID(),tile);
 }

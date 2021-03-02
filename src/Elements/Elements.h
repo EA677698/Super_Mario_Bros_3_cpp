@@ -17,7 +17,7 @@ protected:
     bool unloaded;
 
 public:
-    Elements(Layer layer, const Point &location);
+    Elements(Layer layer, Point &location);
     void reloadLayer();
     void removeFromLayer();
     void changeLayer(Layer layer);
@@ -25,7 +25,7 @@ public:
     bool isUnloaded();
     void setUnloaded(bool isLoaded);
     Point getLocation();
-    void setLocation(const Point &location);
+    void setLocation(Point &location);
     void setLocation(const int x, const int y);
     void addX(int x);
     void addY(int y);

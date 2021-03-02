@@ -26,8 +26,8 @@ Bricks::Bricks(Elements::Layer layer, Point location, bool collision, bool break
 void Bricks::tick() {
     Interactable::tick();
     if(!isActivated()){
-        if(Main.game.getManager().getPlayer()!=NULL) {
-            if (Main.game.getManager().getPlayer().getHitBox().intersects(getHitBox())&&getHitBox().outcode(Main.game.getManager().getPlayer().getHitBox().getCenterX(),Main.game.getManager().getPlayer().getHitBox().getCenterY())==8) {
+        if(global.manager.getPlayer()!=NULL) {
+            if (global.manager.getPlayer()->getHitBox().intersects(getHitBox())&&getHitBox().outcode(global.manager.getPlayer()->getHitBox().getCenterX(),global.manager.getPlayer()->getHitBox().getCenterY())==8) {
                 executeOnTouch();
             }
         }
@@ -46,13 +46,13 @@ void Bricks::tick() {
 
 void Bricks::executeOnTouch() {
     setActivated(true);
-    if(breakable&&Main.game.getManager().getPlayer().getPower()==Powers.BIG){
+    if(breakable&&global.manager.getPlayer()->getPower()==Player::BIG){
         removeFromLayer();
-        Main.game.getManager().getTiles().remove(this);
+        vecRemove(global.manager.getTiles(),this);
     }
     if(&containedEntity != NULL){
-        containedEntity.setLocation(getLocation());
-        Main.game.getManager().getEnts().add(containedEntity);
+        containedEntity.setLocation(location);
+        global.manager.getEnts().push_back(containedEntity);
         elapsed = executeTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>100){
             containedEntity.addY(-1);
@@ -67,5 +67,5 @@ Sprite Bricks::getSprite() {
 }
 
 string Bricks::to_string() {
-    return
+    return "";
 }

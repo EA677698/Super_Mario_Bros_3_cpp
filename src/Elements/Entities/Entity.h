@@ -9,6 +9,7 @@
 #include <SFML/Graphics.hpp>
 #include "../Elements.h"
 #include "../Tiles/tile.h"
+#include "../../Main/Main.cpp"
 
 class Entity: public Elements {
 

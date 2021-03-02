@@ -15,7 +15,7 @@ private:
 
 public:
     Fireball(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision);
-    void executeUponTouch(Player player);
+    void executeUponTouch(Player mario);
     void tick();
     void death();
     Sprite getSprite();
