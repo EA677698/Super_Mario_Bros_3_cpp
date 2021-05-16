@@ -26,9 +26,12 @@ private:
     Tile *selectedTile;
     int previousDirection;
     vector<Entity*> ents;
+    Global global;
 
 
 public:
+
+
     void setPreviousDirection(int previousDirection);
 
     const vector<Tile *> &getTiles() const;
@@ -37,7 +40,7 @@ public:
 
     int getPreviousDirection() const;
 
-    const vector<Entity *> &getEnts() const;
+    vector<Entity *> &getEnts();
 
     Entity *getSelectedEntity() const;
 
@@ -54,7 +57,7 @@ public:
     Level *getLevel() const;
 
     void setLevel(Level *level);
-    Manager();
+    Manager(Global global);
     bool commandInput(string input);
     bool addStats(string stat);
     bool freezeElements(string element);

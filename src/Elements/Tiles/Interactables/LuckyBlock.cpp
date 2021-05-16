@@ -5,7 +5,7 @@
 #include "LuckyBlock.h"
 #include "../../Entities/NotLiving/Coin.h"
 
-LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Entity containedEntity) : Interactable(layer, location, collision) {
+LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, Entity containedEntity, Global global) : Interactable(layer, location, collision, global) {
     this->containedEntity = containedEntity;
     setTileName("LuckyBlock");
 }
@@ -13,9 +13,9 @@ LuckyBlock::LuckyBlock(Elements::Layer layer, Point Location, bool collision, En
 void LuckyBlock::tick() {
     Interactable::tick();
     if(!isActivated()){
-        if(global.manager.getPlayer()!=NULL) {
-            if (global.manager.getPlayer()->getHitBox().intersects(getHitBox())) {
-                if(getHitBox().outcode(global.manager.getPlayer().getHitBox().getCenterX(),global.manager.getPlayer().getHitBox().getCenterY())==8){
+        if(global.manager->getPlayer()!=NULL) {
+            if (global.manager->getPlayer()->getHitBox().intersects(getHitBox())) {
+                if(getHitBox().outcode(global.manager->getPlayer()->getHitBox().getCenterX(),global.manager->getPlayer()->getHitBox().getCenterY())==8){
                     executeOnTouch();
                 }
             }
@@ -37,7 +37,7 @@ void LuckyBlock::executeOnTouch() {
     setActivated(true);
     if(&containedEntity != NULL){
         containedEntity.setLocation(getLocation().x,getLocation().y);
-        global.manager.getEnts().push_back(containedEntity);
+        global.manager->getEnts().push_back(containedEntity);
         elapsed = executeTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>100){
             containedEntity.changeLayer(MIDDLE_LAYER);

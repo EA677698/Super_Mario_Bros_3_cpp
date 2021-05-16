@@ -4,6 +4,6 @@
 
 #include "Clip.h"
 
-Clip::Clip(Elements::Layer layer, Point location, int middleBlocks, int layers) : Tool(layer, location,true,  middleBlocks, layers) {
+Clip::Clip(Elements::Layer layer, Point location, int middleBlocks, int layers, Global global) : Tool(layer, location,true,  middleBlocks, layers, global) {
     setTileName("Clip");
 }

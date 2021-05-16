@@ -9,12 +9,12 @@
 class WoodenBlock : public Tile {
 
 private:
-    Texture texture;
-    Sprite sprite;
+    sf::Texture texture;
+    sf::Sprite sprite;
 
 public:
-    WoodenBlock(Layer layer, Point location, bool collision);
-    Sprite getSprite();
+    WoodenBlock(Layer layer, Point location, bool collision, Global global);
+    sf::Sprite getSprite();
 
 };
 

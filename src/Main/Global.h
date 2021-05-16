@@ -24,9 +24,10 @@ public:
     static Dimension windowSize;
     void HUDCheck();
     void addCard(Cards card);
-    Manager manager;
+    Manager *manager;
     void scaling();
     void playSound(string path);
+    Global();
 };
 
 #endif //SUPER_MARIO_BROS_3_C_GLOBAL_H

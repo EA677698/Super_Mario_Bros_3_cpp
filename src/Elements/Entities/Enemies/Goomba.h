@@ -9,16 +9,16 @@
 class Goomba : public Enemy {
 
 private:
-    Clock one, two;
-    Time elapsed;
+    sf::Clock one, two;
+    sf::Time elapsed;
 
 public:
-    Goomba(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision);
-    Goomba(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision);
-    Goomba(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision);
+    Goomba(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision, Global global);
+    Goomba(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision, Global global);
+    Goomba(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global);
     void tick();
     void death();
-    Sprite getSprite();
+    sf::Sprite getSprite();
 };
 
 

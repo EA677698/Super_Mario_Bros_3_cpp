@@ -4,7 +4,7 @@
 
 #include "Floor.h"
 
-Floor::Floor(Elements::Layer layer, Point location, bool collision, int middleBlocks, int layers) : Tile(layer, location, collision) {
+Floor::Floor(Elements::Layer layer, Point location, bool collision, int middleBlocks, int layers, Global global) : Tile(layer, location, collision, global) {
     this->middleBlocks = middleBlocks;
     this->layers = layers;
     this->setTileName("Platform");
@@ -15,7 +15,7 @@ Floor::Floor(Elements::Layer layer, Point location, bool collision, int middleBl
 
 void Floor::tick() {
     Tile::tick();
-    if(global.manager.getSelectedTile()==this){
+    if(global.manager->getSelectedTile()==this){
         changeHeight();
         changeLength();
     }
@@ -53,23 +53,23 @@ Sprite Floor::getSprite() {
     return Sprite();
 }
 
-void Floor::calculateTileLayers() {
-    Image[][] tile = new Image[1+layers][2+middleBlocks];
-    tile[0][0] = Main.game.getSpritesLoader().getFloor()[0];
-    for(int i = 1; i<tile[0].length-1; i++){
-        tile[0][i] = Main.game.getSpritesLoader().getFloor()[1];
-    }
-    tile[0][tile[0].length-1] = Main.game.getSpritesLoader().getFloor()[2];
-    for(int i = 1; i<tile.length; i++){
-        for(int e = 0; e<tile[0].length; e++){
-            if(e==0){
-                tile[i][e] = Main.game.getSpritesLoader().getFloor()[3];
-            } else if(e==tile[0].length-1){
-                tile[i][e] = Main.game.getSpritesLoader().getFloor()[5];
-            } else {
-                tile[i][e] = Main.game.getSpritesLoader().getFloor()[4];
-            }
-        }
-    }
-    global.manager.getTileLayouts().put(getUUID(),tile);
-}
+//void Floor::calculateTileLayers() {
+//    Image[][] tile = new Image[1+layers][2+middleBlocks];
+//    tile[0][0] = Main.game.getSpritesLoader().getFloor()[0];
+//    for(int i = 1; i<tile[0].length-1; i++){
+//        tile[0][i] = Main.game.getSpritesLoader().getFloor()[1];
+//    }
+//    tile[0][tile[0].length-1] = Main.game.getSpritesLoader().getFloor()[2];
+//    for(int i = 1; i<tile.length; i++){
+//        for(int e = 0; e<tile[0].length; e++){
+//            if(e==0){
+//                tile[i][e] = Main.game.getSpritesLoader().getFloor()[3];
+//            } else if(e==tile[0].length-1){
+//                tile[i][e] = Main.game.getSpritesLoader().getFloor()[5];
+//            } else {
+//                tile[i][e] = Main.game.getSpritesLoader().getFloor()[4];
+//            }
+//        }
+//    }
+//    global.manager.getTileLayouts().put(getUUID(),tile);
+//}

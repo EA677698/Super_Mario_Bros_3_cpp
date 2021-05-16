@@ -13,7 +13,7 @@ private:
      int type;
 
 public:
-    Clouds(Layer layer, Point location, bool collision, int type);
+    Clouds(Layer layer, Point location, bool collision, int type, Global global);
     Sprite getSprites();
     void calculateTileLayers() override;
     string to_string();

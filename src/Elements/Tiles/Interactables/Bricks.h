@@ -6,24 +6,25 @@
 #define SUPER_MARIO_BROS_3_C_BRICKS_H
 #include "Interactable.h"
 #include "../../Entities/Entity.h"
-#include "../../../Main/Main.cpp"
 #include "../../../Tools/GeneralTools.cpp"
+#include "../../../Main/Global.h"
 
 class Bricks : public Interactable{
 
 private:
-    Clock executeTimer, timer;
-    Time elapsed;
+    Global *global;
+    sf::Clock executeTimer, timer;
+    sf::Time elapsed;
     Entity containedEntity;
     bool breakable;
 public:
     const Entity &getContainedEntity() const;
     bool isBreakable() const;
-    Bricks(Layer layer, Point location, bool collision, Entity containedEntity);
-    Bricks(Layer layer, Point location, bool collision, bool breakable);
+    Bricks(Layer layer, Point location, bool collision, Entity containedEntity, Global global);
+    Bricks(Layer layer, Point location, bool collision, bool breakable, Global global);
     void tick();
     void executeOnTouch() override;
-    Sprite getSprite();
+    sf::Sprite getSprite();
     string to_string();
 };
 

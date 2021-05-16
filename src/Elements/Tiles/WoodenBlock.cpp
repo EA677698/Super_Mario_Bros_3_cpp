@@ -4,11 +4,11 @@
 
 #include "WoodenBlock.h"
 
-WoodenBlock::WoodenBlock(Elements::Layer layer, Point location, bool collision) : Tile(layer, location, collision) {
+WoodenBlock::WoodenBlock(Elements::Layer layer, Point location, bool collision, Global global) : Tile(layer, location, collision, global) {
     setTileName("WoodenBlock");
 }
 
-Sprite WoodenBlock::getSprite() {
+sf::Sprite WoodenBlock::getSprite() {
     sprite.setTexture(texture);
     return sprite;
 }

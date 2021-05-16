@@ -4,7 +4,7 @@
 
 #include "Level.h"
 
-Level::Level(Level::Background background, string BGM) : Elements(NONE, location){
+Level::Level(Level::Background background, string BGM, Global global) : Elements(NONE, location, global){
     Level::background = background;
     bgm = BGM;
 }

@@ -5,20 +5,20 @@
 #include "KoopaTroopa.h"
 
 KoopaTroopa::KoopaTroopa(Elements::Layer layer, Point coordinates, int width, int height, int direction,
-                         bool hasCollision) : Enemy(layer, coordinates, width, height, direction, hasCollision) {
+                         bool hasCollision, Global global) : Enemy(layer, coordinates, width, height, direction, hasCollision, global) {
 
 }
 
 KoopaTroopa::KoopaTroopa(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                         int direction, bool hasGravity, bool hasCollision) : Enemy(layer, coordinates, width, height,
+                         int direction, bool hasGravity, bool hasCollision, Global global) : Enemy(layer, coordinates, width, height,
                                                                                     life, damage, direction, hasGravity,
-                                                                                    hasCollision) {
+                                                                                    hasCollision, global) {
 
 }
 
 KoopaTroopa::KoopaTroopa(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                         double velocity, double gravity, int direction, bool hasGravity, bool hasCollision) : Enemy(
-        layer, coordinates, width, height, life, damage, velocity, gravity, direction, hasGravity, hasCollision) {
+                         double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global) : Enemy(
+        layer, coordinates, width, height, life, damage, velocity, gravity, direction, hasGravity, hasCollision, global) {
 
 }
 
@@ -43,6 +43,6 @@ void KoopaTroopa::death() {
     Enemy::death();
 }
 
-Sprite KoopaTroopa::getSprite() {
+sf::Sprite KoopaTroopa::getSprite() {
     return Enemy::getSprite();
 }

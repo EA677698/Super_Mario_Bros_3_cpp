@@ -10,11 +10,11 @@ class Enemy : public Entity{
 
 public:
 
-    Enemy(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision);
-    Enemy(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision);
-    Enemy(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision);
+    Enemy(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision, Global global);
+    Enemy(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision, Global global);
+    Enemy(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global);
     void death();
-    Sprite getSprite();
+    sf::Sprite getSprite();
     string to_string();
 };
 

@@ -4,8 +4,8 @@
 #include "Global.h"
 
 void Global::HUDCheck(){
-    if(manager.getPlayer()!= nullptr){
-        int temp = (int)manager.getPlayer()->getXVelocity();
+    if(manager->getPlayer()!= nullptr){
+        int temp = (int)manager->getPlayer()->getXVelocity();
         for(int i = 1; temp>4; i++){
             active[i] = true;
             temp--;
@@ -52,6 +52,10 @@ void Global::playSound(string path) {
     buffer.loadFromFile(path);
     sound.setBuffer(buffer);
     sound.play();
+}
+
+Global::Global() {
+    manager = new Manager(*this);
 }
 
 //void getCards(){

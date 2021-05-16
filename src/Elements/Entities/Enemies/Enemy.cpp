@@ -4,17 +4,17 @@
 
 #include "Enemy.h"
 
-Enemy::Enemy(Elements::Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision): Entity(layer,coordinates,width,height,hasCollision) {
+Enemy::Enemy(Elements::Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision, Global global): Entity(layer,coordinates,width,height,hasCollision, global) {
     this->setDirection(direction);
 }
 
 Enemy::Enemy(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, int direction,
-             bool hasGravity, bool hasCollision) : Entity(layer,coordinates,width,height,life, damage, hasGravity, hasCollision) {
+             bool hasGravity, bool hasCollision, Global global) : Entity(layer,coordinates,width,height,life, damage, hasGravity, hasCollision, global) {
     this->setDirection(direction);
 }
 
 Enemy::Enemy(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity,
-             double gravity, int direction, bool hasGravity, bool hasCollision) : Entity(layer,coordinates,width,height,life, damage, velocity, gravity, hasGravity, hasCollision) {
+             double gravity, int direction, bool hasGravity, bool hasCollision, Global global) : Entity(layer,coordinates,width,height,life, damage, velocity, gravity, hasGravity, hasCollision, global) {
     this->setDirection(direction);
 }
 
@@ -22,7 +22,7 @@ void Enemy::death() {
     Entity::death();
 }
 
-Sprite Enemy::getSprite() {
+sf::Sprite Enemy::getSprite() {
     return Entity::getSprite();
 }
 

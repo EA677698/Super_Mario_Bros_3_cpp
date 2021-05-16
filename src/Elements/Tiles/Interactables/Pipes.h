@@ -18,7 +18,7 @@ private:
     Time elapsed;
 
 public:
-    Pipes(Layer layer, Point location, bool collision, int blocks);
+    Pipes(Layer layer, Point location, bool collision, int blocks, Global global);
     void tick();
     void connectToPipe(Pipes pipe);
     void executeOnAction();

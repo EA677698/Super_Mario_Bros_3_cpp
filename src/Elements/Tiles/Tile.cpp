@@ -52,7 +52,7 @@ void Tile::setBlocksPerLayer(int blocksPerLayer) {
     Tile::blocksPerLayer = blocksPerLayer;
 }
 
-Tile::Tile(Elements::Layer layer, Point location, bool collision) : Elements(layer, location) {
+Tile::Tile(Elements::Layer layer, Point location, bool collision, Global global) : Elements(layer, location, global) {
     this->location = location;
     this->collision = collision;
     hitBox.setBounds(location.x,location.y,width,height);

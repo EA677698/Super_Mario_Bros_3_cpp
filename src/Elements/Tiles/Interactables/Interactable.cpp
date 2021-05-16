@@ -4,7 +4,7 @@
 
 #include "Interactable.h"
 
-Interactable::Interactable(Elements::Layer layer, Point location, bool collision) : Tile(layer, location, collision) {
+Interactable::Interactable(Elements::Layer layer, Point location, bool collision, Global global) : Tile(layer, location, collision, global) {
 
 }
 

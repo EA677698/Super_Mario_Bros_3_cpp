@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
-#include "Global.cpp"
+#include "Global.h"
+#include "../Settings/Settings.cpp"
 
 using namespace sf;
 

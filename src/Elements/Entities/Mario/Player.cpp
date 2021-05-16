@@ -128,11 +128,11 @@ void Player::changeSprite() {
     }
 }
 
-Player::Player(Elements::Layer layer, Point coordinates, int width, int height, bool hasCollision) : Entity(layer,
+Player::Player(Elements::Layer layer, Point coordinates, int width, int height, bool hasCollision, Global global) : Entity(layer,
                                                                                                             coordinates,
                                                                                                             width,
                                                                                                             height,
-                                                                                                            hasCollision) {
+                                                                                                            hasCollision, global) {
     power = SMALL;
     this->setEntityName("Mario");
     this->setXVelocity(0);
@@ -140,7 +140,7 @@ Player::Player(Elements::Layer layer, Point coordinates, int width, int height, 
 }
 
 Player::Player(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity,
-               bool hasCollision) : Entity(layer, coordinates, width, height, life, damage, hasGravity, hasCollision) {
+               bool hasCollision, Global global) : Entity(layer, coordinates, width, height, life, damage, hasGravity, hasCollision, global) {
     power = SMALL;
     this->setEntityName("Mario");
     this->setXVelocity(0);
@@ -148,9 +148,9 @@ Player::Player(Elements::Layer layer, Point coordinates, int width, int height, 
 }
 
 Player::Player(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, double speed,
-               double gravity, bool hasGravity, bool hasCollision) : Entity(layer, coordinates, width, height, life,
+               double gravity, bool hasGravity, bool hasCollision, Global global) : Entity(layer, coordinates, width, height, life,
                                                                             damage, speed, gravity, hasGravity,
-                                                                            hasCollision) {
+                                                                            hasCollision, global) {
     power = SMALL;
     this->setEntityName("Mario");
     this->setXVelocity(0);
@@ -213,4 +213,8 @@ void Player::death() {
         addY(10);
         deathTimer.restart();
     }
+}
+
+string Player::to_string() {
+    return Entity::to_string();
 }

@@ -6,7 +6,7 @@
 #define SUPER_MARIO_BROS_3_C_TRIGGER_H
 #include "Tool.h"
 #include "../Tools/GeneralTools.cpp"
-#include "../Main/Main.cpp"
+#include "../Main/Global.h"
 
 class Trigger : public Tool {
 
@@ -17,10 +17,11 @@ private:
     bool stillInContact;
     Clock timer;
     Time elapsed;
+    Global *global;
 
 public:
 
-    Trigger(Layer layer, Point location, int middleBlocks, int layers, string command, int activations);
+    Trigger(Layer layer, Point location, int middleBlocks, int layers, string command, int activations, Global global);
 
     void tick();
 

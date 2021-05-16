@@ -15,7 +15,7 @@ private:
     Clock timerX,timerY;
 
 public:
-    Tool(Layer layer, Point location, bool collision, int middleBlocks, int layers);
+    Tool(Layer layer, Point location, bool collision, int middleBlocks, int layers, Global global);
     void tick();
     void changeLength() override;
     void changeHeight() override;

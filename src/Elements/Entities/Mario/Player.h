@@ -25,6 +25,13 @@ private:
     void changeSprite();
 
 public:
+
+    Player(Layer layer, Point coordinates, int width, int height, bool hasCollision, Global global);
+
+    Player(Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity, bool hasCollision, Global global);
+
+    Player(Layer layer, Point coordinates, int width, int height, int life, int damage, double speed, double gravity, bool hasGravity, bool hasCollision, Global global);
+
     enum Power{DEAD,NONE,SMALL,BIG,FIRE,TANOOKI,STAR};
 
     Power power;
@@ -49,17 +56,13 @@ public:
 
     void setStartH(bool startH);
 
-    Player(Layer layer, Point coordinates, int width, int height, bool hasCollision);
-
-    Player(Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity, bool hasCollision);
-
-    Player(Layer layer, Point coordinates, int width, int height, int life, int damage, double speed, double gravity, bool hasGravity, bool hasCollision);
-
     void tick();
 
     Sprite getSprite();
 
     void death();
+
+    string to_string();
 
 
 };

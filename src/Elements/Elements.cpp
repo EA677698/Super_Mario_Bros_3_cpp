@@ -4,7 +4,7 @@
 
 #include "Elements.h"
 
-Elements::Elements(Layer layer, Point &location) {
+Elements::Elements(Layer layer, Point &location, Global global) {
     Elements::layer = layer;
     Elements::location = location;
     switch (layer){
@@ -15,6 +15,7 @@ Elements::Elements(Layer layer, Point &location) {
         case FRONT_LAYER:
             break;
     }
+    Elements::global = global;
 }
 
 void Elements::reloadLayer() {

@@ -5,12 +5,16 @@
 #ifndef SUPER_MARIO_BROS_3_C_CONTROLS_H
 #define SUPER_MARIO_BROS_3_C_CONTROLS_H
 #include <SFML/Window/Keyboard.hpp>
-#include "../Main/Global.h"
+#include <SFML/System/Clock.hpp>
+#include <SFML/Window.hpp>
 #include "Settings.cpp"
+#include "../Tools/HitBox.h"
+#include "../Main/Global.h"
 
 using namespace sf;
 
-Clock timer;
+
+sf::Clock timer;
 bool JUMP,LEFT,RIGHT,DOWN,UP,CONTROL,ALT,SHIFT,SLASH,SELECT,SIX,CONSOLE,DELETE;
 HitBox mouseHitBox(0,0,30,30);
 
@@ -36,11 +40,11 @@ void updateControls(Window &window, Global &global){
     mouseHitBox.setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
     if(Mouse::isButtonPressed(Mouse::Left)&&debug){
         global.manager.select();
-        if(global.manager.getSelectedEntity() != nullptr){
-            global.manager.getSelectedEntity()->setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
+        if(global.manager->getSelectedEntity() != nullptr){
+            global.manager->getSelectedEntity()->setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
         }
-        if(global.manager.getSelectedTile() != nullptr){
-            global.manager.getSelectedTile()->setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
+        if(global.manager->getSelectedTile() != nullptr){
+            global.manager->getSelectedTile()->setLocation(Mouse::getPosition(window).x,Mouse::getPosition(window).y);
         }
     }
 }

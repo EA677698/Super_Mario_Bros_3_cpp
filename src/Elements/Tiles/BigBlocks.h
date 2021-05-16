@@ -19,7 +19,7 @@ private:
 
 public:
 
-    BigBlocks(Layer layer, Point location, bool collision, int type, int rows, int columns);
+    BigBlocks(Layer layer, Point location, bool collision, int type, int rows, int columns, Global global);
     void tick();
     void changeLength();
     void changeHeight();

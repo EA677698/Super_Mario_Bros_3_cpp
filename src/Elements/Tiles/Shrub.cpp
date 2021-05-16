@@ -4,10 +4,10 @@
 
 #include "Shrub.h"
 
-Shrub::Shrub(Elements::Layer layer, Point location, bool collision) : Tile(layer, location, collision) {
+Shrub::Shrub(Elements::Layer layer, Point location, bool collision, Global global) : Tile(layer, location, collision, global) {
     setTileName("Shrub");
 }
 
-Sprite Shrub::getSprites() {
-    return Sprite();
+sf::Sprite Shrub::getSprites() {
+    return sf::Sprite();
 }

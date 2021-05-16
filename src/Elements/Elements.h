@@ -5,6 +5,7 @@
 #ifndef SUPER_MARIO_BROS_3_C_ELEMENTS_H
 #define SUPER_MARIO_BROS_3_C_ELEMENTS_H
 #include "../Tools/Point.h"
+#include "../Main/Global.h"
 
 class Elements {
 
@@ -12,12 +13,13 @@ public:
     enum Layer{FRONT_LAYER,MIDDLE_LAYER,BACK_LAYER, NONE};
 
 protected:
+    Global global;
     Layer layer;
     Point location;
     bool unloaded;
 
 public:
-    Elements(Layer layer, Point &location);
+    Elements(Layer layer, Point &location, Global global);
     void reloadLayer();
     void removeFromLayer();
     void changeLayer(Layer layer);

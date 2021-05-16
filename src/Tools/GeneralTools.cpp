@@ -43,14 +43,15 @@ int string_match(string input, string list[], int size){
             return i;
         }
     }
+    return -1;
 }
 
 
 void vecRemove(Entity *ent, vector<Entity*> vector){
     for(int i = 0; i<vector.size(); i++){
         if(vector[i]==ent){
-            delete ent;
             vector.erase(vector.begin()+i);
+            delete ent;
         }
     }
 }
@@ -58,8 +59,8 @@ void vecRemove(Entity *ent, vector<Entity*> vector){
 void vecRemove(Tile *tile, vector<Tile*> vector){
     for(int i = 0; i<vector.size(); i++){
         if(vector[i] == tile){
-            delete tile;
             vector.erase(vector.begin()+i);
+            delete tile;
         }
     }
 }

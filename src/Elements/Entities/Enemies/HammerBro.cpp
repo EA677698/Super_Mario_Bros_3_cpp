@@ -3,21 +3,22 @@
 //
 
 #include "HammerBro.h"
+#include "../NotLiving/Fireball.h"
 
 HammerBro::HammerBro(Elements::Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision,
-                     int type) : Enemy(layer, coordinates, width, height, direction, hasCollision) {
+                     int type, Global global) : Enemy(layer, coordinates, width, height, direction, hasCollision, global) {
     this->type = type;
     setEntityName("HammerBro");
 }
 
 HammerBro::HammerBro(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                     int direction, bool hasGravity, bool hasCollision, int type) : Enemy(layer, coordinates, width, height, life, damage, direction, hasGravity, hasCollision) {
+                     int direction, bool hasGravity, bool hasCollision, int type, Global global) : Enemy(layer, coordinates, width, height, life, damage, direction, hasGravity, hasCollision, global) {
     this->type = type;
     setEntityName("HammerBro");
 }
 
 HammerBro::HammerBro(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                     double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, int type) : Enemy(layer, coordinates, width, height, life, damage, velocity, gravity, direction, hasGravity, hasCollision) {
+                     double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, int type, Global global) : Enemy(layer, coordinates, width, height, life, damage, velocity, gravity, direction, hasGravity, hasCollision, global) {
     this->type = type;
     setEntityName("HammerBro");
 }
@@ -31,7 +32,8 @@ void HammerBro::tick() {
         }
         elapsed = attackTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>2000){
-            if(isFacingEntity(Main.game.getManager().getPlayer())){
+            Player *player = global.manager->getPlayer();
+            if(isFacingEntity(player)){
                 attack();
             } else {
                 setDirection(getDirection()*-1);
@@ -46,7 +48,9 @@ void HammerBro::tick() {
 void HammerBro::attack() {
     if(type==3){
         setSpriteIndex(1);
-        Main.game.getManager().getEnts().add(new Fireball(Layer.MIDDLE_LAYER,getLocation(),40,40,getDirection(),false));
+        Point location;
+        location = getLocation();
+        global.manager->getEnts().push_back(new Fireball(Elements::MIDDLE_LAYER,location,40,40,getDirection(),false, global));
     }
 }
 

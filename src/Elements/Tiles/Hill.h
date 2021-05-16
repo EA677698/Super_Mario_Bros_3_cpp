@@ -22,7 +22,7 @@ public:
     void setType(int type);
     int getBlocks() const;
     void setBlocks(int blocks);
-    Hill(Layer layer, Point location, bool collision, int type, int blocks);
+    Hill(Layer layer, Point location, bool collision, int type, int blocks, Global global);
     void tick();
     void changeHeight() override;
     void calculateTileLayers() override;

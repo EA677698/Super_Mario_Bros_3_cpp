@@ -24,7 +24,9 @@
 #include "../Tools/GeneralTools.cpp"
 #include "../Tools/Trigger.h"
 
-Manager::Manager() {}
+Manager::Manager(Global global) {
+    Manager::global = global;
+}
 
 bool Manager::commandInput(string input) {
     if(contains(input," ")) {
@@ -81,7 +83,7 @@ bool Manager::commandInput(string input) {
             case 5:
                 ents.clear();
                 tiles.clear();
-                level = new Level(Level::AQUA_BACKGROUND, "C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\BGM\\grassland.wav");
+                level = new Level(Level::AQUA_BACKGROUND, "C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\BGM\\grassland.wav", global);
                 return true;
             case 6:
                 muted = !muted;
@@ -274,72 +276,72 @@ bool Manager::spawnElement(string element) {
     switch (ret){
         case 0:
             marioCheck();
-            ents.push_back(new Player(Elements::MIDDLE_LAYER, location,60,60, true));
+            ents.push_back(new Player(Elements::MIDDLE_LAYER, location,60,60, true, global));
             return true;
         case 1:
-            ents.push_back(new Goomba(Elements::MIDDLE_LAYER, location,60,60,1, true));
+            ents.push_back(new Goomba(Elements::MIDDLE_LAYER, location,60,60,1, true, global));
             return true;
         case 2:
-            ents.push_back(new KoopaTroopa(Elements::MIDDLE_LAYER, location,60,98,1, true));
+            ents.push_back(new KoopaTroopa(Elements::MIDDLE_LAYER, location,60,98,1, true, global));
             return true;
         case 3:
-            ents.push_back(new RedMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true));
+            ents.push_back(new RedMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true, global));
             return true;
         case 4:
-            ents.push_back(new GreenMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true));
+            ents.push_back(new GreenMushroom(Elements::MIDDLE_LAYER, location,60,60,1,true, global));
             return true;
         case 5:
             ents.push_back(new Coin(Elements::MIDDLE_LAYER, &location,60,60,0,true,global));
             return true;
         case 6:
-            tiles.push_back(new Floor(Elements::MIDDLE_LAYER, location,true,8,1));
+            tiles.push_back(new Floor(Elements::MIDDLE_LAYER, location,true,8,1, global));
             return true;
         case 7:
-            tiles.push_back(new WoodenBlock(Elements::MIDDLE_LAYER, location,true));
+            tiles.push_back(new WoodenBlock(Elements::MIDDLE_LAYER, location,true, global));
             return true;
         case 8:
-            tiles.push_back(new LuckyBlock(Elements::MIDDLE_LAYER, location,true, new Coin(Elements::NONE, new Point(0,0),70,80,0,true,global)));
+            tiles.push_back(new LuckyBlock(Elements::MIDDLE_LAYER, location,true, new Coin(Elements::NONE, new Point(0,0),70,80,0,true,global), global));
             return true;
         case 9:
-            tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,2,8));
+            tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,2,8, global));
             return true;
         case 10:
-            tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,1,8));
+            tiles.push_back(new Hill(Elements::BACK_LAYER, location,false,1,8, global));
             return true;
         case 11:
-            tiles.push_back(new Bricks(Elements::MIDDLE_LAYER, location,true,true));
+            tiles.push_back(new Bricks(Elements::MIDDLE_LAYER, location,true,true, global));
             return true;
         case 12:
-            ents.push_back(new HammerBro(Elements::MIDDLE_LAYER, location,60,98,-1,true,3));
+            ents.push_back(new HammerBro(Elements::MIDDLE_LAYER, location,60,98,-1,true,3, global));
             return true;
         case 13:
-            tiles.push_back(new Pipes(Elements::MIDDLE_LAYER, location,true,4));
+            tiles.push_back(new Pipes(Elements::MIDDLE_LAYER, location,true,4, global));
             return true;
         case 14:
-            tiles.push_back(new Clouds(Elements::BACK_LAYER, location, false ,1));
+            tiles.push_back(new Clouds(Elements::BACK_LAYER, location, false ,1, global));
             return true;
         case 15:
-            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,0,0,0));
+            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,0,0,0, global));
             return true;
         case 16:
-            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,2,0,0));
+            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,2,0,0, global));
             return true;
         case 17:
-            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,1,0,0));
+            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,1,0,0, global));
             return true;
         case 18:
-            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,3,0,0));
+            tiles.push_back(new BigBlocks(Elements::BACK_LAYER, location,true,3,0,0, global));
             return true;
         case 19:
-            tiles.push_back(new Shrub(Elements::BACK_LAYER,location,false));
+            tiles.push_back(new Shrub(Elements::BACK_LAYER,location,false, global));
             return true;
         case 20:
-            tiles.push_back(new Clip(Elements::FRONT_LAYER, location,0,1));
+            tiles.push_back(new Clip(Elements::FRONT_LAYER, location,0,1, global));
             return true;
         case 21:
             String command = element.substr(element.find(" ")+1, element.find_last_of(" "));
             int activations = stoi(element.substr(element.find_last_of(" ")+1));
-            tiles.push_back(new Trigger(Elements::FRONT_LAYER, location, 0,1, command, activations));
+            tiles.push_back(new Trigger(Elements::FRONT_LAYER, location, 0,1, command, activations, global));
             return true;
     }
     return false;
@@ -577,7 +579,7 @@ int Manager::getPreviousDirection() const {
     return previousDirection;
 }
 
-const vector<Entity *> &Manager::getEnts() const {
+vector<Entity *> &Manager::getEnts() {
     return ents;
 }
 
@@ -592,3 +594,4 @@ void Manager::setPlayer(Player &mario) {
 Player* Manager::getPlayer() {
     return mario;
 }
+

@@ -20,7 +20,7 @@ protected:
 
 public:
 
-    Tile(Layer layer, Point location, bool collision);
+    Tile(Layer layer, Point location, bool collision, Global global);
 
     virtual void tick();
 

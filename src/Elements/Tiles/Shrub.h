@@ -10,8 +10,8 @@ class Shrub : public Tile {
 
 public:
 
-    Shrub(Layer layer, Point location, bool collision);
-    Sprite getSprites();
+    Shrub(Layer layer, Point location, bool collision, Global global);
+    sf::Sprite getSprites();
 
 };
 

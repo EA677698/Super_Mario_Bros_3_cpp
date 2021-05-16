@@ -9,7 +9,7 @@
 class Clip : public Tool {
 
 public:
-    Clip(Layer layer, Point location, int middleBlocks, int layers);
+    Clip(Layer layer, Point location, int middleBlocks, int layers, Global global);
 
 };
 

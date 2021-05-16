@@ -20,7 +20,7 @@ void Hill::setBlocks(int blocks) {
     Hill::blocks = blocks;
 }
 
-Hill::Hill(Elements::Layer layer, Point location, bool collision, int type, int blocks) : Tile(layer, location, collision) {
+Hill::Hill(Elements::Layer layer, Point location, bool collision, int type, int blocks, Global global) : Tile(layer, location, collision, global) {
     if(blocks%2==1){
         blocks++;
     }
@@ -34,7 +34,7 @@ Hill::Hill(Elements::Layer layer, Point location, bool collision, int type, int 
 
 void Hill::tick() {
     Tile::tick();
-    if(Main.game.getManager().getSelectedTile()==this){
+    if(global.manager->getSelectedTile()==this){
         changeHeight();
         changeLength();
     }
@@ -54,13 +54,13 @@ void Hill::changeHeight() {
     }
 }
 
-void Hill::calculateTileLayers() {
-    Image[][] tile = new Image[(2+blocks)/2][2];
-    tile[0][0] = getTypeTextures()[2];
-    tile[0][1] = getTypeTextures()[3];
-    for(int i = 1; i<tile.length; i++){
-        tile[i][0] = getTypeTextures()[0];
-        tile[i][1] = getTypeTextures()[1];
-    }
-    Main.game.getManager().getTileLayouts().put(getUUID(),tile);
-}
+//void Hill::calculateTileLayers() {
+//    Image[][] tile = new Image[(2+blocks)/2][2];
+//    tile[0][0] = getTypeTextures()[2];
+//    tile[0][1] = getTypeTextures()[3];
+//    for(int i = 1; i<tile.length; i++){
+//        tile[i][0] = getTypeTextures()[0];
+//        tile[i][1] = getTypeTextures()[1];
+//    }
+//    Main.game.getManager().getTileLayouts().put(getUUID(),tile);
+//}

@@ -11,9 +11,9 @@ class RedMushroom : public NonLiving {
 
 public:
 
-    RedMushroom(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision);
-    RedMushroom(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity,bool hasCollision);
-    RedMushroom(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity,bool hasCollision);
+    RedMushroom(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision, Global global);
+    RedMushroom(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity,bool hasCollision, Global global);
+    RedMushroom(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity,bool hasCollision, Global global);
     void executeUponTouch(Player player) override;
     void tick();
     void death();

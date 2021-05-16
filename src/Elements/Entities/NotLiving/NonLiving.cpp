@@ -5,17 +5,17 @@
 #include "NonLiving.h"
 
 NonLiving::NonLiving(Elements::Layer layer, Point coordinates, int width, int height, int direction,
-                     bool hasCollision) : Entity(layer, coordinates, width, height, hasCollision) {
+                     bool hasCollision, Global global) : Entity(layer, coordinates, width, height, hasCollision, global) {
     this->setDirection(direction);
 }
 
 NonLiving::NonLiving(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                     int direction, bool hasGravity, bool hasCollision) : Entity(layer, coordinates, width, height, life, damage, hasGravity, hasCollision) {
+                     int direction, bool hasGravity, bool hasCollision, Global global) : Entity(layer, coordinates, width, height, life, damage, hasGravity, hasCollision, global) {
     this->setDirection(direction);
 }
 
 NonLiving::NonLiving(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                     double velocity, double gravity, int direction, bool hasGravity, bool hasCollision) : Entity(layer, coordinates, width, height, life, damage, velocity, gravity, hasGravity, hasCollision) {
+                     double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global) : Entity(layer, coordinates, width, height, life, damage, velocity, gravity, hasGravity, hasCollision, global) {
     this->setDirection(direction);
 }
 

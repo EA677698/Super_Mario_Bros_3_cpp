@@ -13,7 +13,7 @@ private:
     int currentSprite;
 
 public:
-    Interactable(Layer layer, Point location, bool collision);
+    Interactable(Layer layer, Point location, bool collision, Global global);
     void tick();
     virtual void executeOnTouch();
     virtual void executeOnAction();

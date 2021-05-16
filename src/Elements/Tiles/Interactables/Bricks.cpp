@@ -3,6 +3,7 @@
 //
 
 #include "Bricks.h"
+#include "../../Entities/Mario/Player.h"
 
 const Entity &Bricks::getContainedEntity() const {
     return containedEntity;
@@ -12,13 +13,13 @@ bool Bricks::isBreakable() const {
     return breakable;
 }
 
-Bricks::Bricks(Elements::Layer layer, Point location, bool collision, Entity containedEntity) : Interactable(layer, location, collision){
+Bricks::Bricks(Elements::Layer layer, Point location, bool collision, Entity containedEntity, Global global) : Interactable(layer, location, collision, global){
     this->containedEntity = containedEntity;
     setTileName("Brick");
     breakable = false;
 }
 
-Bricks::Bricks(Elements::Layer layer, Point location, bool collision, bool breakable) : Interactable(layer, location, collision) {
+Bricks::Bricks(Elements::Layer layer, Point location, bool collision, bool breakable, Global global) : Interactable(layer, location, collision, global) {
     setTileName("Brick");
     breakable = breakable;
 }
@@ -26,8 +27,8 @@ Bricks::Bricks(Elements::Layer layer, Point location, bool collision, bool break
 void Bricks::tick() {
     Interactable::tick();
     if(!isActivated()){
-        if(global.manager.getPlayer()!=NULL) {
-            if (global.manager.getPlayer()->getHitBox().intersects(getHitBox())&&getHitBox().outcode(global.manager.getPlayer()->getHitBox().getCenterX(),global.manager.getPlayer()->getHitBox().getCenterY())==8) {
+        if(global->manager->getPlayer()!=NULL) {
+            if (global->manager->getPlayer()->getHitBox().intersects(getHitBox())&&getHitBox().outcode(global->manager->getPlayer()->getHitBox().getCenterX(),global->manager->getPlayer()->getHitBox().getCenterY())==8) {
                 executeOnTouch();
             }
         }
@@ -46,24 +47,24 @@ void Bricks::tick() {
 
 void Bricks::executeOnTouch() {
     setActivated(true);
-    if(breakable&&global.manager.getPlayer()->getPower()==Player::BIG){
+    if(breakable&&global->manager->getPlayer()->getPower()==Player::BIG){
         removeFromLayer();
-        vecRemove(global.manager.getTiles(),this);
+        vecRemove(this,global->manager->getTiles());
     }
     if(&containedEntity != NULL){
         containedEntity.setLocation(location);
-        global.manager.getEnts().push_back(containedEntity);
+        global->manager->getEnts().push_back(&containedEntity);
         elapsed = executeTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>100){
             containedEntity.addY(-1);
-            executeTimer.restart()
+            executeTimer.restart();
         }
     }
     setCurrentSprite(4);
 }
 
-Sprite Bricks::getSprite() {
-    return Sprite();
+sf::Sprite Bricks::getSprite() {
+    return sf::Sprite();
 }
 
 string Bricks::to_string() {

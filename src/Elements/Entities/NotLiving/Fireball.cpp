@@ -4,27 +4,25 @@
 
 #include "Fireball.h"
 
-Fireball::Fireball(Elements::Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision)
-        : NonLiving(layer, coordinates, width, height, direction, hasCollision) {
+Fireball::Fireball(Elements::Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision, Global global)
+        : NonLiving(layer, coordinates, width, height, direction, hasCollision, global) {
 
 }
 
-void Fireball::executeUponTouch(Player mario) {
+void Fireball::executeUponTouch(Player &mario) {
     if(&mario != NULL){
         elapsed = hitTimer.getElapsedTime();
         if(elapsed.asMilliseconds()>2000){
             if(mario.getHitBox().intersects(getHitBox())){
                 switch (mario.getPower()){
-                    case mario.SMALL: mario.setDead(true);
-                        Main.game.getBgmPlayer().getMusic().stop();
-                        SFX.down1.setFramePosition(0);
-                        SFX.down1.start();
+                    case Player::SMALL: mario.setDead(true);
+                        global.player.stop();
+                        global.playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\1down.wav");
                         break;
-                    case mario.BIG: mario.setPower(mario.SMALL);
-                        SFX.pipe.setFramePosition(0);
-                        SFX.pipe.start();
+                    case Player::BIG: mario.setPower(Player::SMALL);
+                        global.playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\pipe.wav");
                         break;
-                    default: mario.setPower(mario.BIG);
+                    default: mario.setPower(Player::BIG);
                 }
                 hitTimer.restart();
             }

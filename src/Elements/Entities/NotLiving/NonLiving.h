@@ -10,9 +10,9 @@
 class NonLiving : public Entity{
 
 public:
-    NonLiving(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision);
-    NonLiving(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision);
-    NonLiving(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision);
+    NonLiving(Layer layer, Point coordinates, int width, int height, int direction, bool hasCollision, Global global);
+    NonLiving(Layer layer, Point coordinates, int width, int height, int life, int damage, int direction, bool hasGravity, bool hasCollision, Global global);
+    NonLiving(Layer layer, Point coordinates, int width, int height, int life, int damage, double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global);
     virtual void executeUponTouch(Player player);
     Sprite getSprite();
     string to_String();

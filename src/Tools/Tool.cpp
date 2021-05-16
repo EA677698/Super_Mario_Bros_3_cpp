@@ -4,7 +4,7 @@
 
 #include "Tool.h"
 
-Tool::Tool(Elements::Layer layer, Point location, bool collision, int middleBlocks, int layers) : Tile(layer, location, collision){
+Tool::Tool(Elements::Layer layer, Point location, bool collision, int middleBlocks, int layers, Global global) : Tile(layer, location, collision, global){
     Tool::layers = layers;
     Tool::middleBlocks = middleBlocks;
     setWidth(60+(middleBlocks*60));

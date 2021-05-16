@@ -9,17 +9,16 @@
 #include <SFML/Graphics.hpp>
 #include "../Elements.h"
 #include "../Tiles/tile.h"
-#include "../../Main/Main.cpp"
 
 class Entity: public Elements {
 
 private:
-    Clock gravityTimer;
-    Time elapsed;
+    sf::Clock gravityTimer;
+    sf::Time elapsed;
 
 protected:
-    Texture texture;
-    Sprite sprite;
+    sf::Texture texture;
+    sf::Sprite sprite;
     int width, height, life, damage, spriteIndex, direction, touchingGround;
     double XVelocity, YVelocity, gravity;
     HitBox hitBox;
@@ -100,11 +99,11 @@ public:
 
     void setHasGravity(bool hasGravity);
 
-    Entity(Layer layer, Point coordinates, int width, int height, bool hasCollision);
+    Entity(Layer layer, Point coordinates, int width, int height, bool hasCollision, Global global);
 
-    Entity(Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity, bool hasCollision);
+    Entity(Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity, bool hasCollision, Global global);
 
-    Entity(Layer layer, Point coordinates, int width, int height, int life, int damage, double XVelocity, double gravity, bool hasGravity, bool hasCollision);
+    Entity(Layer layer, Point coordinates, int width, int height, int life, int damage, double XVelocity, double gravity, bool hasGravity, bool hasCollision, Global global);
 
     void tick();
 

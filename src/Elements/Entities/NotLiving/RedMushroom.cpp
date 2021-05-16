@@ -5,30 +5,30 @@
 #include "RedMushroom.h"
 
 RedMushroom::RedMushroom(Elements::Layer layer, Point coordinates, int width, int height, int direction,
-                         bool hasCollision) : NonLiving(layer, coordinates, width, height, direction, hasCollision) {
+                         bool hasCollision, Global global) : NonLiving(layer, coordinates, width, height, direction, hasCollision, global) {
     setEntityName("RedMushroom");
 }
 
 RedMushroom::RedMushroom(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                         int direction, bool hasGravity, bool hasCollision) : NonLiving(layer, coordinates, width,
+                         int direction, bool hasGravity, bool hasCollision, Global global) : NonLiving(layer, coordinates, width,
                                                                                         height, life, damage, direction,
-                                                                                        hasGravity, hasCollision) {
+                                                                                        hasGravity, hasCollision, global) {
     setEntityName("RedMushroom");
 }
 
 RedMushroom::RedMushroom(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                         double velocity, double gravity, int direction, bool hasGravity, bool hasCollision)
+                         double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global)
         : NonLiving(layer, coordinates, width, height, life, damage, velocity, gravity, direction, hasGravity,
-                    hasCollision) {
+                    hasCollision, global) {
     setEntityName("RedMushroom");
 }
 
 void RedMushroom::executeUponTouch(Player player) {
     player.setPower(player.BIG);
-    SFX.powerUp.setFramePosition(0);
-    SFX.powerUp.start();
+    global.playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\powerup.wav");
     removeFromLayer();
-    Main.game.getManager().getEnts().remove(this);}
+    vecRemove(this, global.manager->getEnts());
+}
 
 void RedMushroom::tick() {
     Entity::tick();

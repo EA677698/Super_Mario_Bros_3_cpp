@@ -128,7 +128,7 @@ void Entity::setHitBox(HitBox hitBox) {
     Entity::hitBox = hitBox;
 }
 
-Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, bool hasCollision): Elements(layer, coordinates) {
+Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, bool hasCollision, Global global): Elements(layer, coordinates, global) {
     location.setLocation((int)(coordinates.x*global.scaleX),(int)(coordinates.y*global.scaleY));
     Entity::width = (int)(width*global.scaleX);
     Entity::height = (int)(height*global.scaleY);
@@ -142,7 +142,7 @@ Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, 
 }
 
 Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, bool hasGravity,
-               bool hasCollision): Elements(layer, coordinates) {
+               bool hasCollision, Global global): Elements(layer, coordinates, global) {
     location.setLocation((int)(coordinates.x*global.scaleX),(int)(coordinates.y*global.scaleY));
     Entity::width = (int)(width*global.scaleX);
     Entity::height = (int)(height*global.scaleY);
@@ -156,7 +156,7 @@ Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, 
 }
 
 Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage, double XVelocity,
-               double gravity, bool hasGravity, bool hasCollision): Elements(layer, coordinates) {
+               double gravity, bool hasGravity, bool hasCollision, Global global): Elements(layer, coordinates, global) {
     location.setLocation((int)(coordinates.x*global.scaleX),(int)(coordinates.y*global.scaleY));
     Entity::width = (int)(width*global.scaleX);
     Entity::height = (int)(height*global.scaleY);
@@ -171,7 +171,7 @@ Entity::Entity(Elements::Layer layer, Point coordinates, int width, int height, 
 
 void Entity::tick() {
     touchingGround = 0;
-    for(Tile *tile: global.manager.getTiles()){
+    for(Tile *tile: global.manager->getTiles()){
         if(tile->isCollision()){
             int side = tile->getHitBox().outcode(hitBox.getCenterX(),hitBox.getCenterY());
             if(hitBox.intersects(tile->getHitBox())&&(side==2||side==3||side==6)){

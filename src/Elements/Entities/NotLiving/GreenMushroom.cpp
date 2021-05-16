@@ -5,32 +5,31 @@
 #include "GreenMushroom.h"
 
 GreenMushroom::GreenMushroom(Elements::Layer layer, Point coordinates, int width, int height, int direction,
-                             bool hasCollision) : NonLiving(layer, coordinates, width, height, direction,
-                                                            hasCollision) {
+                             bool hasCollision, Global global) : NonLiving(layer, coordinates, width, height, direction,
+                                                            hasCollision, global) {
     setEntityName("GreenMushroom");
 }
 
 GreenMushroom::GreenMushroom(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                             int direction, bool hasGravity, bool hasCollision) : NonLiving(layer, coordinates, width,
+                             int direction, bool hasGravity, bool hasCollision, Global global) : NonLiving(layer, coordinates, width,
                                                                                             height, life, damage,
                                                                                             direction, hasGravity,
-                                                                                            hasCollision) {
+                                                                                            hasCollision, global) {
     setEntityName("GreenMushroom");
 }
 
 GreenMushroom::GreenMushroom(Elements::Layer layer, Point coordinates, int width, int height, int life, int damage,
-                             double velocity, double gravity, int direction, bool hasGravity, bool hasCollision)
+                             double velocity, double gravity, int direction, bool hasGravity, bool hasCollision, Global global)
         : NonLiving(layer, coordinates, width, height, life, damage, velocity, gravity, direction, hasGravity,
-                    hasCollision) {
+                    hasCollision, global) {
     setEntityName("GreenMushroom");
 }
 
 void GreenMushroom::executeUponTouch(Player player) {
-    Global.lives++;
-    SFX.up1.setFramePosition(0);
-    SFX.up1.start();
+    global.lives++;
+    global.playSound("C:\\Users\\Erick\\Desktop\\Super_Mario_Bros_3_c++\\sounds\\SFX\\1up.wav")
     removeFromLayer();
-    Main.game.getManager().getEnts().remove(this);
+    vecRemove(this, global.manager->getEnts());
 }
 
 void GreenMushroom::death() {
